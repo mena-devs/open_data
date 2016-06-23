@@ -1,5 +1,7 @@
 #!/usr/bin/python
 #
+# SlackDataCollector
+#
 # Script that uses the Slack python SDK
 # to authenticate to the MENA-Devs Slack Group
 # and collect relevant user information for the purpose
@@ -17,21 +19,24 @@ import sys
 import slack
 import slack.users
 
-
 class Collector:
 
-    def __init__(self, config):
-        self.parse_config(config)
+    def load_config(self, config_file_path):
+        if not os.path.isfile(config_file_path):
+            self.print_out('Configuration file does not exist. Make sure the file '
+                           '"config.yml" exists and is configured correctly.',
+                           'FATAL')
+            return False
+        # Load the file
+        config = yaml.safe_load(open(config_file_path))
 
-    def parse_config(self, config):
         """ 
         Parses the yaml configuration file and stores the data into
         member variables 
         """
         if not config:
-            self.print_out('Configuration File is either not available or '
-                           ' not parsed correctly. Make sure the file'
-                           '"config.yml" exists and is configured correctly.',
+            self.print_out('Corrupted configuration file - could not be parsed '
+                           'make sure "config.yml" is configured correctly.',
                            'FATAL')
             return False
 
@@ -39,9 +44,8 @@ class Collector:
         self.data_file_prefix = config['storage']['data_file_prefix']
         # Set the slack API token
         slack.api_token = config['secure']['slack_group_token']
-
-        self.print_out(self.data_dir)
-        self.print_out(self.data_file_prefix)
+        # All went well
+        return True
 
     def collect_data(self):
         """
@@ -136,15 +140,16 @@ class Collector:
 
 
 if __name__ == "__main__":
-    # TODO: Handle the case where the configuration
-    # file doesn't exist
-    config = yaml.safe_load(open("config.yml"))
+    script_dir = os.path.dirname(__file__)
+    config_file_path = os.path.join(script_dir, 'config.yml')
     # Create a new Collector instance
     # and pass the configuration as a param
-    collector_inst = Collector(config)
-    # Initiate the collection process
-    data = collector_inst.collect_data()
-    # Write data into the file
-    data = collector_inst.anonymize_data(data)
-    # Write clean data into file
-    collector_inst.write_data(data)
+    collector_inst = Collector()
+    # Try to load the configuration file
+    if collector_inst.load_config(config_file_path):
+        # Initiate the collection process
+        data = collector_inst.collect_data()
+        # Write data into the file
+        data = collector_inst.anonymize_data(data)
+        # Write clean data into file
+        collector_inst.write_data(data)
