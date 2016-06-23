@@ -1,0 +1,5 @@
+# Ignore config file
+config.yml
+
+# Data
+_data/
