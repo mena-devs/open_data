@@ -1,8 +1,0 @@
-# Ignore config file
-config.yml
-
-# Data
-_data/
-
-*.egg-info
-__pycache__
