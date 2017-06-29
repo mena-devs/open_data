@@ -1,19 +1,13 @@
 # MENA-Devs Open Data Project
 ## Synopsis
 
-TBD
+MENA Devs was first launched in January, 2015 with the purpose of connecting Software Developers, Engineers and Computer Enthusiasts in the MENA region. What started as a Slack group has evolved to become a vibrant community of 240+ members engaging in daily discussions in software, and web development, tools of the trade, work methodologies and workflows, and technical management styles (to name a few of the popular topics).
+
+We occasionaly conduct research and surveys within this group and publish our data under very permissive creative commons licenses. This open data is hosted in this repository for the benefit of the community.
 
 ## What will be published?
-
-TBD
-
 ## Purpose of publishing this data?
-
-TBD
-
 ## Who can use this data?
-
-TBD
 
 ## Published Reports
 
