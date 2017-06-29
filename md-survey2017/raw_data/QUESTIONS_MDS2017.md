@@ -4,7 +4,7 @@ These are the questions asked in the MENA Devs Survey (2017). These might not ha
 
 ### Questions List
 
-You will notice that some of these questions have multiple choice answers. You can find the answers to them in `raw_data/MD_Survey-29062017.csv` as headers.
+You will notice that some of these questions have multiple choice answers. You can find the answers to them in `raw_data/MD_Survey-29062017.csv` as headers. You will also notice that the order of the answers in the previously mentioned document is not the same as the order of the questions below. The headers will be a good indicator of the relationship.
 
 1. What age group do you belong to?
 2. What is your gender?
