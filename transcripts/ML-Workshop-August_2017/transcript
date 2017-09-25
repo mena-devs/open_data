@@ -1,0 +1,3432 @@
+00:10
+Hello, my name is Islam
+00:12
+I'm visiting here from San Francisco staying
+00:15
+in Lebanon for the summer
+00:19
+I have met Bassem... can you hear me? At the back?
+00:23
+Can you hear me? Ok, I'll speak up
+00:26
+I met Bassem 3 months ago at a
+00:27
+in Abu Dhabi at a hackathon and then
+00:30
+when I came back, I had to grab coffee with him
+00:32
+and told him, what do you think if we do a machine learning workshop
+00:35
+cause there are a lot of programmers whom I talked to 
+00:37
+here, have the willingness and the passion to 
+00:40
+learn this topic
+00:42
+but they never had the chance to do so before
+00:44
+I lived in San Francisco for four years
+00:47
+aproximately, I worked on a number of
+00:49
+machine learning projects in a number
+00:50
+of startups there and maybe I'll talk
+00:52
+about that maybe tomorrow towards the
+00:54
+end of the workshop but for now we'll
+00:57
+begin with a theoretical introduction on
+01:00
+what machine learning is and then we're
+01:03
+going to dive into code I'm a big
+01:05
+believer that code is the best way for
+01:08
+you to learn so the coding will be the
+01:10
+most of this workshop expect to be
+01:12
+writing code for most of this. I'll begin
+01:14
+covering the theoretical part and then
+01:16
+we'll dive into any setting up the
+01:18
+environment setting up the coding all of
+01:20
+this stuff okay alright so I'll start
+01:25
+super high level the first question that
+01:30
+I have to you is what is learning? any
+01:33
+ideas?
+01:34
+What's your name?
+01:38
+It's Yussef Zaatary. Learning is making mistakes and
+01:45
+identifying mistakes and future steps. Cool
+01:47
+any other definitions of learning?
+01:49
+how would you define learning?
+01:54
+building skills. Yes. And so I looked it
+01:58
+up in the dictionary this is the
+02:01
+dictionary definition it's oh I'm
+02:03
+blocking it. It's the acquisition of
+02:05
+knowledge or skills so study experience
+02:08
+or being taught so let me give you an
+02:11
+example like reading is that something
+02:14
+that you learn? yes okay so what about
+02:19
+growing your nails? or growing your hair?
+02:26
+y-yeah and so here here's there's a very
+02:29
+important distinction that I want to
+02:31
+make between something being programmed
+02:33
+versus something being learned. So for
+02:37
+example if you look at humans there are
+02:40
+some things that are already programmed
+02:41
+these are things that are in your genes
+02:43
+so for example growing your hair
+02:46
+breathing, blood flow, repairing your
+02:49
+wounds, digesting food and so on all of
+02:52
+these things are encoded on your genes
+02:54
+and so you didn't learn them because you
+02:57
+are programmed with it and then there's
+02:59
+all these other things that you learned
+03:01
+after you are born so reading writing
+03:05
+language driving a car writing code
+03:08
+going to the gym all of this stuff are
+03:10
+things that you learned so it's things
+03:12
+that you acquire through experience okay so
+03:16
+given that let's look a little bit
+03:19
+closer into how humans actually learn so
+03:22
+this is a baby learning to read and if
+03:24
+you think about maybe when you're 3 or 4
+03:26
+when you're introduced to reading you're
+03:28
+learning by example so you would see oh
+03:31
+this is an a this is a "B" this is a "C" you
+03:34
+would see thousands and thousands and
+03:36
+thousands of examples over time and then
+03:38
+your brain is able to generalize it
+03:41
+you're able to see that all these
+03:44
+different variations are "A" even though
+03:48
+we've never seen those before like I can
+03:50
+tell that this is an a the crocodile
+03:53
+with a bird inside I can tell that this
+03:56
+is an A I may have never seen this font
+03:58
+before that this is an a that the a with
+04:00
+the two eyeballs on top is an A I'm able
+04:02
+to identify all of these things because
+04:04
+your brain is very very powerful
+04:07
+at seeing the different patterns the
+04:10
+general pattern of Na and seeing it
+04:12
+everywhere else and so if I come back to
+04:15
+machines what is machine learning it's
+04:20
+actually the exact same thing
+04:23
+it's the acquisition of knowledge or
+04:25
+skills through study or experience by a
+04:29
+machine there really is no difference
+04:32
+between humans and machines as far as
+04:34
+learning those the exact same rules
+04:36
+apply one extra definition that would be
+04:40
+helpful for you is the ability for the
+04:44
+ability for machines to learn without
+04:45
+being explicitly taught this actually
+04:48
+doesn't apply just to computers it
+04:50
+applies to humans as well as we
+04:52
+mentioned some things in you are
+04:53
+programmed in your genes and everything
+04:55
+else is learned ok so we talked about
+04:59
+how humans learn the difference between
+05:01
+programmed and versus learned what
+05:04
+machine learning is at a super high
+05:05
+level but why should we care like why
+05:07
+does it matter why should machine
+05:09
+learning exist why should we even bother
+05:11
+with this well it turns out that there's
+05:13
+a lot of problems where it's very
+05:15
+difficult to program but it's actually
+05:18
+much easier to learn for example what is
+05:21
+this it's a tree you have no problem in
+05:24
+identifying that this is a tree ok but
+05:27
+how would you define a tree let's see if
+05:28
+we can program this it's a fracture a
+05:32
+fracture oh a fractal
+05:36
+okay any other definitions of the tree
+05:40
+branches and leaves or what is a branch
+05:46
+yeah sure what is a branch can you
+05:49
+define a branch ok it's a brown pipe
+05:55
+well what about this one is this not a
+05:58
+branch but it's not brown yeah well then
+06:04
+it gets a bit philosophical this is
+06:06
+where it gets like really complicated so
+06:07
+if I say so and it does have a pattern
+06:13
+but some of them don't grow like this
+06:15
+some of them are more pointy and shorter
+06:18
+for example Hugh said okay maybe it's
+06:21
+a brown trunk what leaves this wouldn't
+06:25
+be a tree and this would be a tree but
+06:26
+it's actually not and you can clearly
+06:28
+tell that this is not and so there are
+06:30
+so many different problems like this but
+06:31
+it's very very difficult to actually
+06:33
+identify or define the problem that you
+06:36
+as a human don't have a problem in
+06:37
+learning it but it's extremely difficult
+06:39
+to define and it turns out that looking
+06:44
+into the brain your brain is actually a
+06:46
+supercomputer it is able to the way it's
+06:49
+able to easily identify these things is
+06:51
+through billions and billions of neurons
+06:53
+that is in your brain for example the
+06:56
+part the part that is responsible for
+06:59
+seeing in your brain the primary visual
+07:01
+cortex that alone has a hundred and
+07:04
+forty million neurons and tens of
+07:07
+billions of connections and so all these
+07:10
+different connections are somehow able
+07:12
+to see to tell that this is a tree and
+07:15
+this is an A and this is a human and
+07:17
+this is a building and this is this is
+07:20
+just one layer of six different layers
+07:23
+that are inside your brain your brain is
+07:25
+a supercomputer and so if we dig inside
+07:28
+a little bit your brain is hackable for
+07:31
+example he look closely at this picture
+07:33
+your brain will get confused sometimes
+07:35
+because you'll see that this is a spiral
+07:37
+but this is actually for perfect circles
+07:40
+so your brain is used to specific things
+07:43
+but at the same time it is not perfect
+07:45
+you can hack it just like you can hack a
+07:48
+machine as well so what is inside the
+07:51
+brain
+07:52
+now that is largely unknown but what we
+07:55
+know so far is that a brain has these
+07:58
+building blocks called neurons and these
+08:01
+neurons have a state they can either be
+08:03
+on or off and these neurons are
+08:06
+connected to other neurons with
+08:08
+connections called synapses so these
+08:11
+connections are used to transfer
+08:12
+information from one unit to the next
+08:14
+and a neuron can turn off or on
+08:17
+neighboring neurons and so at any given
+08:20
+point in time there's a configuration in
+08:23
+your head of neurons that are turned on
+08:24
+and are turned off and these somehow map
+08:27
+to the thoughts and whatever things that
+08:30
+you see and hear and touch
+08:32
+but how that fully works remains not
+08:37
+fully understood but it seems like the
+08:39
+more neurons that we have the more
+08:41
+neurons and synapses that one would have
+08:43
+the more computing power and the more
+08:46
+intellect that you can have so let's
+08:49
+look at different brains out in the
+08:51
+nature so this is a sponge how many
+08:55
+neurons does a sponge have in its brain
+08:57
+any guesses zero yeah we actually got
+09:01
+that right a sponge has no brain what
+09:04
+about a jellyfish any guesses no it does
+09:08
+she does have a green it has a green a
+09:12
+couple of million actually thought less
+09:15
+than that it's 5600 neurons so it's a
+09:17
+super super small brain what about a
+09:21
+cockroach no you're good at this it's
+09:25
+exactly 1 million neurons
+09:27
+okay what about a mouse I can't a
+09:34
+billion it's 71 million close 71 million
+09:39
+neurons and about a trillion synapses
+09:42
+what about a pigeon
+09:46
+two orders of magnitude so like it's a
+09:54
+little less it's a little less yes
+09:57
+so it's 310 million neurons for the
+09:59
+pigeon this is a cat it's not a pigeon
+10:03
+okay how many yes okay so a cat let's
+10:10
+see a cat has 760 million and around ten
+10:14
+trillion synapses gorillas any guesses
+10:19
+one billion it's more it's way more it's
+10:23
+more than ten billion it is 33 billion
+10:28
+actually close okay and then humans less
+10:33
+than less than yes let's not get into
+10:39
+them okay no it's less close so we're
+10:45
+actually at around 86 billion neurons
+10:46
+and around 150 trillion synapses now our
+10:51
+humans so actually the baby has less
+10:54
+neurons but an adult it's about 86
+10:56
+billion now there are creatures that
+11:00
+have larger brains but it's not clear
+11:02
+why they're not necessarily more
+11:04
+intelligent this is why I'm saying it's
+11:05
+still largely unexplored but we can see
+11:08
+that there's generally a correlation
+11:10
+between the more neurons and synapses
+11:11
+you have with more computational power
+11:13
+that's in the brain so one type of
+11:20
+dolphin has a significantly larger brain
+11:24
+I don't I'm not sure it might might yes
+11:30
+but for example there are types of
+11:31
+element elephants and dolphins that have
+11:34
+three times as many neurons as humans
+11:36
+but there are different theories of why
+11:39
+it's not more intelligent one theory is
+11:41
+where the neurons are in the brain
+11:43
+matters so the part that really matters
+11:46
+for abstract thought
+11:47
+it's called the cerebral cortex in
+11:49
+humans that have they have around 16
+11:51
+billion neurons for Elephants that have
+11:54
+much larger brain they have six billion
+11:56
+neurons so it's a much smaller cerebral
+11:58
+cortex
+11:59
+but all these are conjectures they're
+12:01
+not proven yet okay so we talked a
+12:05
+little bit of theory about there's this
+12:07
+something called the brain and there's
+12:09
+these things called neurons and synapses
+12:10
+that somehow are able to recognize
+12:13
+patterns and identify trees and see
+12:16
+things just like we humans do now it's
+12:21
+time to actually take this into some
+12:23
+code so we're actually gonna write we're
+12:25
+gonna see how we can use a brain this is
+12:28
+gonna be very analogous to the brain in
+12:31
+nature and so the first thing I'm gonna
+12:35
+do we're gonna get you set up shortly
+12:37
+but I want to actually demonstrate the
+12:39
+code first so that you can see how this
+12:43
+all fits together now this is gonna
+12:45
+closely map to the example of humans
+12:48
+human learning that we talked about
+12:50
+before so in a human you see a human
+12:53
+reading the alphabet you see thousands
+12:55
+and thousands of examples of characters
+12:57
+and then from that you infer the general
+12:59
+structure of what an a looks like what a
+13:01
+B looks like and so forth so if you want
+13:04
+to do this what a machine is it okay if
+13:06
+I I am recording this screen I got you
+13:09
+and so if we want to do this with humans
+13:12
+can you hear me guys at the back a
+13:15
+little bit okay so if we want to do the
+13:18
+same thing with humans the first thing
+13:21
+we have to do is to get a data set a
+13:23
+data set is gonna be a data file work
+13:26
+contains all the different examples of
+13:28
+whatever it is that we want to teach so
+13:30
+in this example we're actually gonna
+13:32
+teach a brain to understand digits it's
+13:37
+gonna be able to recognize a picture
+13:39
+it's gonna you're gonna give it a
+13:40
+picture of a number and it's gonna tell
+13:41
+you what this number is so the first
+13:45
+thing is we would get the data set now I
+13:47
+already have it downloaded I'll get into
+13:49
+the details of how you can do this on
+13:50
+your machine in a second and the second
+13:53
+thing we're gonna do is I'm just gonna
+13:56
+load a bunch of libraries that I'll also
+13:57
+get into and more individually but the
+14:01
+first thing I'm gonna do is the load the
+14:04
+digits and it's loading an asterisk here
+14:10
+means that it's running okay
+14:12
+it has finished running and if I look at
+14:14
+this this is 60,000 images and the image
+14:19
+sizes are 28 by 28 so let's take a look
+14:22
+at what's inside this data set so here
+14:27
+is an example of some of the images that
+14:29
+we have so this is a data set of Arabic
+14:31
+digits and each one has a label so this
+14:36
+image image of the number 3 has the
+14:38
+label 3 this has a 4 5 s and so forth
+14:41
+and notice how deceivingly complicated
+14:44
+this problems or deceivingly simple it's
+14:46
+actually quite a complicated problem
+14:47
+look at the difference between this 5
+14:50
+and this 5 you don't have it you don't
+14:53
+have a problem in identifying that both
+14:54
+of these are fives but they're actually
+14:56
+written very differently and as an image
+14:58
+it looks very different okay so we took
+15:01
+a look at this data set and now the next
+15:04
+thing we're gonna do is this is what the
+15:08
+image mm-hm you wouldn't be able to see
+15:11
+it well here let me see if i zoom out
+15:14
+yeah so this is the matrix of what each
+15:16
+image looks like this is what this is
+15:18
+what the brain actually sees so this is
+15:21
+a 28 by 28 image and each number here is
+15:24
+the pixel value of that image if you
+15:26
+look closely you can almost see the
+15:27
+number 9 in this this is what the brain
+15:30
+is actually processing okay and so the
+15:37
+next thing we're going to do is actually
+15:38
+going to teach the brain so in this case
+15:41
+we have 60,000 images as I mentioned and
+15:44
+now we're going to create a brain and
+15:48
+then we're gonna make this brain learn
+15:50
+we're gonna give it the images and the
+15:53
+labels with that image and so what is
+15:56
+actually happening happening now this is
+15:57
+the brain as its learning and the
+16:00
+background the two things that I want
+16:01
+you to pay attention to are the the
+16:07
+accuracy I don't know if can you guys
+16:09
+see this number
+16:11
+yes so this is at 96% so right now it's
+16:16
+saying that based on what it has based
+16:19
+on the study and the learning that it
+16:20
+has done so far it has learned it has
+16:23
+gotten 96% of it correctly and as you go
+16:27
+by you'll notice that this accuracy is
+16:29
+getting better and better and better
+16:31
+over time so how does this work in sight
+16:35
+this is what we're going to be
+16:37
+discussing in the next day tomorrow but
+16:40
+for the purpose of today I actually want
+16:43
+you to learn how to use this so the next
+16:47
+thing is now once this brain has learned
+16:49
+let's actually see if it has learned
+16:51
+well we're gonna test it and so I'm
+16:53
+gonna load some images and these images
+16:57
+the brain has never seen before so I
+17:01
+just loaded it and let's look at one of
+17:03
+these images so here I just Lommel it
+17:07
+loaded test image number 18 and so this
+17:10
+is the image that we have now let's run
+17:13
+it by the brain and see what it will
+17:15
+give us so here I would do a brain dot
+17:18
+predict and I give it the image and then
+17:24
+look at the prediction and in this case
+17:27
+it tells me that it is innate so I was
+17:29
+able to identify that this is an image
+17:31
+now let me get instead of just
+17:36
+predicting one image I'm gonna predict
+17:37
+all the images so here predicted 10,000
+17:42
+images and here are the predictions and
+17:46
+now let's actually get a sense of like
+17:48
+where this brain is going wrong let's
+17:50
+see which ones we messed up we didn't
+17:52
+get correctly so here I'm figuring out
+17:55
+which ones are incorrect and then I'm
+18:01
+gonna take a look okay so these are some
+18:04
+of the things that got wrong and you'll
+18:06
+notice that some of these things are
+18:08
+genuinely hard for example this this I
+18:13
+was actually a zero I thought it was a
+18:15
+five it actually looks like a five but
+18:18
+who never wrote it meant to write a zero
+18:20
+let's see
+18:22
+this was also a five
+18:25
+but it predicted it to be a zero because
+18:27
+it was more like a big dot this was
+18:30
+actually a three but for whatever reason
+18:32
+addicted a zero I guess because it was
+18:33
+very very clustered this one it
+18:36
+predicted it to be a zero because when
+18:38
+it cooked when you look at it closely
+18:40
+it's more like a dot like the Arabic
+18:42
+zero so looking at this gives you a
+18:44
+sense of okay what is it that the brain
+18:46
+is having in trouble with and these look
+18:49
+like it's genuinely hard like I have no
+18:51
+idea what this is but it says it's an
+18:54
+eight hole never wrote it it actually it
+18:56
+is an eight now that no that you would
+18:57
+tell me what it is so this was a sanity
+19:02
+check to see that the brain is actually
+19:03
+working properly and it's almost
+19:04
+comparable to human performance like
+19:07
+some of these things I would struggle in
+19:09
+identifying as numbers okay so the first
+19:13
+thing that we want to do now now I
+19:14
+showed you how you can or a very simple
+19:17
+example of a brain learning Arabic
+19:20
+digits we're gonna do two things one is
+19:22
+we're going to set up the environment
+19:23
+yesterday and we'll make it work and
+19:25
+actually run this code and this next
+19:28
+thing is we're gonna move on to an
+19:30
+exercise where instead of us teaching it
+19:32
+Arabic digits we're gonna be teaching it
+19:35
+English digits and to give you some sure
+19:43
+third one this one this one this one so
+19:50
+the actual was zero and the predicted
+19:52
+was an eight so yeah I that looks like
+19:56
+an eight to me too but whomever wrote it
+19:59
+wrote it with the intention of it being
+20:01
+a zero
+20:04
+[Music]
+20:14
+yeah so so in this particular case I
+20:18
+think because there was a dot like the
+20:20
+person put in a dot and then it's
+20:21
+smudged a little bit and then it ended
+20:24
+up looking like an 8 so in a typical
+20:28
+scenario you as a human would mistake it
+20:30
+for an 8 I mistake it for an 8 and so
+20:33
+this is where machines and humans sort
+20:36
+of become comparable learning is not
+20:37
+perfect in this case but as long as we
+20:40
+see that the things that got wrong are
+20:41
+things that are genuinely hard then this
+20:44
+is a sign that it learned well any other
+20:47
+questions about this so far
+21:01
+yeah so the actual is a five and then
+21:04
+asada was a zero because it was very
+21:06
+round
+21:19
+no they were all yeah that's a good
+21:23
+question so I'm not sure how this
+21:25
+dataset was particularly prepared my
+21:27
+guess is it wasn't my guess is the zero
+21:30
+was scaled a little bit and maybe that
+21:32
+was part of the that was part of the
+21:34
+problem like if you look at some of the
+21:36
+zeros they're actually quite big very
+21:38
+large dots okay
+21:41
+any other questions about this so far
+21:46
+okay so if you have gotten the
+21:48
+repository for this for this workshop I
+21:52
+think you should do a good pull because
+21:55
+I've made some last-minute changes but
+21:57
+the repository will have the brain that
+22:01
+we're gonna be using to learn it'll have
+22:02
+this file that you'll be able to run and
+22:06
+what I'm running here you may have asked
+22:08
+what is this thing that I'm running into
+22:10
+this is a called a Jupiter notebook
+22:12
+think of a Jupiter notebook as a place
+22:14
+where I can write text or I can have a
+22:17
+notebook but at the same time I can have
+22:19
+code that executes so whenever I go to a
+22:21
+code block I can write like shift enter
+22:24
+and then it executes that code like when
+22:27
+I say when I rerun this it's gonna get
+22:30
+another random sample and show it so
+22:35
+this is an easier way for you to test
+22:37
+things out and for me to pinpoint some
+22:39
+of the codes and then I can rewrite I
+22:41
+can rerun different lines of the code as
+22:43
+well okay so I want to get started on
+22:48
+get the repository and then what you're
+22:52
+gonna do if you have everything set up
+22:54
+what you should be doing is you're going
+22:58
+to go to the root package of your
+23:01
+repository and then you're gonna type
+23:03
+I'll make this bigger
+23:05
+Jupiter notebook and what this is gonna
+23:08
+oh what this is going to what this is
+23:12
+gonna do is it's going to open up this
+23:16
+notebook interface that we have and then
+23:19
+you can open up Arabic digits and then
+23:23
+you can just click on play and that's
+23:26
+gonna run the code and then you'll get
+23:28
+to see it in action okay
+23:31
+so shall we do this okay
+23:34
+no one's excited guys okay yes the
+23:38
+command would be yes so this should be
+23:44
+their command okay here
+23:53
+so if you had things set up this command
+23:56
+should work
+23:57
+hi yeah this one
+24:06
+okay
+24:14
+you
+24:18
+but we'll we'll get started that
+24:22
+everyone set up their environment from
+24:24
+yesterday there's anyone still having
+24:26
+problems okay perfect perfect so
+24:31
+hopefully today will go a lot smoother
+24:33
+so I meet again I begin what a recap of
+24:37
+some of the theory that we talked about
+24:39
+yesterday so one thing that we talked
+24:42
+about yesterday was how humans learn
+24:44
+versus how machines learn and so if you
+24:47
+look at a comparison in humans you start
+24:50
+by observing the world and the example
+24:53
+that we used a child learning how to
+24:54
+read you see the different letters yet
+24:58
+in school when you're walking on the
+25:00
+street and so forth and then your brain
+25:03
+is able to capture what the general
+25:06
+pattern of each of these letters look
+25:08
+like and the machine that's almost
+25:11
+exactly the same thing but because a
+25:13
+machine usually isn't wandering around
+25:15
+the world looking at it you give it a
+25:17
+data set so they load a data set and
+25:19
+then we build a brain because the
+25:21
+machine doesn't have a brain and then we
+25:23
+teach it so that it can identify the
+25:25
+general pattern so yesterday we walked
+25:28
+through an example of that brain
+25:30
+learning Arabic digits and there was an
+25:34
+exercise of trying to teach it to learn
+25:36
+English digits so I realized I skimmed
+25:39
+through the code yesterday a little too
+25:41
+quickly so I'm gonna go walk through
+25:43
+that code again and then we're gonna
+25:45
+move forward to how this brain actually
+25:47
+works under that ok so the first thing
+25:51
+I'm gonna do I'm gonna get into my
+25:55
+terminal now this is the directory of
+25:57
+the repository that I have and then what
+26:01
+I'm gonna do is I'm gonna run this thing
+26:03
+called Cupid ER now think of Jupiter
+26:08
+as a place for you to write notebooks
+26:10
+it's like notepad but the difference is
+26:13
+that I can put blocks of code inside
+26:16
+this notebook and I can execute blocks
+26:19
+of code inside this notebook so I'm
+26:21
+gonna open up Arabic digits and if you
+26:25
+remember what we mentioned before the
+26:27
+first thing that we would do is we would
+26:28
+get a data set so that the machine would
+26:31
+know what it is that we want to teach so
+26:33
+there was a data set that we gave the
+26:35
+link to which hopefully you've all
+26:36
+downloaded and then what I'm gonna do is
+26:40
+I'm going to take this data set and then
+26:45
+you see in the repository there's a
+26:47
+folder here called data sets and then
+26:50
+there's another folder called Arabic
+26:52
+digits and then you're supposed to paste
+26:55
+all the files there in the zip file into
+26:58
+this folder so that way the code that we
+27:01
+have will be able to know where to read
+27:05
+the files okay so let's have a look at
+27:07
+these files like what is inside these
+27:09
+CSV files are you guys all familiar with
+27:11
+a CSV file is okay so let's look at
+27:15
+training images so here you can see this
+27:21
+is a file that has 60,000 rows and each
+27:25
+row has comma separated values it has it
+27:30
+actually has 784 values and it's
+27:35
+corresponding to the 784 pixels in the
+27:39
+image so it's the pixel intensity of
+27:41
+each value in that image and so what we
+27:45
+do is when we go to Jupiter first we
+27:49
+import some libraries that we'll be
+27:51
+using throughout and I'm getting an
+27:55
+error of some sort let me see
+27:59
+oh I did not actually go into my
+28:03
+environment so so I need to do a knock
+28:07
+here will be source activate the name of
+28:09
+the environment and I'll workshop if
+28:11
+you're on Windows it's just activate ml
+28:14
+workshop ok and you can see that it
+28:18
+actually got in the environment because
+28:20
+you should see it the name of the
+28:21
+environment right here ok now I'm going
+28:26
+to rerun Jupiter this ok reopen Arabic
+28:34
+digits
+28:35
+let's reemployed all this stuff ok so
+28:39
+now it has worked and now we're going to
+28:40
+load the Arabic digits so this is
+28:43
+opening the CSV file and then it's
+28:46
+putting all of these images in memory
+28:49
+now what do these things look like in
+28:51
+memory let's take a look so the way for
+28:55
+you to take a look at this you can see
+28:57
+the shape of the data which is typing
+28:59
+that the name of the variable dot shape
+29:02
+and you see here just like the file we
+29:05
+opened it has 60,000 images and each one
+29:09
+is 28 by 28 and so here it is a sample
+29:15
+image and we we saw this before why
+29:20
+Sheila's so this is the matrix it's a
+29:25
+it's a two-dimensional matrix of the
+29:28
+numbers in an image you can almost see
+29:30
+the number 9 here exactly and the label
+29:34
+the corresponding label should just be
+29:40
+the number 9 okay now once you know the
+29:44
+data set if its pictures that's always a
+29:46
+good idea to visualize things throughout
+29:48
+I don't think people that are doing
+29:50
+machine there
+29:51
+visualizing things as much as they
+29:52
+should and so this is a little function
+29:55
+that I gave you you get it the images
+29:57
+and the labels and it will pick some
+29:59
+random images to show you so you can get
+30:02
+a feel of this dataset and so here as we
+30:06
+mentioned before these are the 28 by 28
+30:08
+images and just above them is the
+30:10
+corresponding people so seven seven one
+30:13
+and you can notice the different
+30:15
+variations like between the 6 and the 6
+30:17
+and the two 7s this is the general
+30:20
+pattern that this brain is meant to
+30:21
+understand and if I rerun this again you
+30:25
+should get a different sample so feel
+30:28
+free when you're going through the code
+30:29
+to check that out okay so now we've
+30:32
+loaded the data set and now because a
+30:35
+machine doesn't have a brain we're going
+30:37
+to create this little object that I
+30:40
+called brain what is it that's something
+30:42
+that we're gonna talk about shortly but
+30:43
+for now it is a brain so we brie the
+30:47
+brain and then we're gonna make it learn
+30:49
+we're gonna give it images and the
+30:52
+labels and so now it's started learning
+30:56
+and you'll see we have 60,000 images we
+31:02
+put 48,000 images to train on and 12,000
+31:07
+images what is called validation so here
+31:10
+we've split the data into 80% 48,000
+31:15
+images for training for the brain to
+31:17
+look at and to recognize the pattern in
+31:20
+and then the other 20% the 12,000 images
+31:23
+this is used to test to see how good
+31:25
+this brain is and so as the brain is
+31:28
+learning it's actually learning the
+31:31
+training examples and you'll see here is
+31:34
+the accuracy you're starting at 96% and
+31:37
+the more you learn the better it gets so
+31:40
+here you end up at 99.3% but the number
+31:43
+that actually matters more is the
+31:46
+validation accuracy so this is the 20%
+31:50
+of the data set that the brain didn't
+31:52
+look at and so here it varies between
+31:55
+97% and 98.5 percent so this is actually
+31:59
+looking pretty good and to see further
+32:03
+ok what is it that this brain houses
+32:07
+brain performing there is another
+32:10
+dataset but the brain never looked at
+32:12
+this is always a good idea to actually
+32:14
+test the true performance of that brain
+32:16
+so we're gonna load that dataset and
+32:19
+again always a good idea to visualize
+32:21
+I'm gonna plot the image or one of the
+32:24
+images so this is one of the images that
+32:26
+I have and now I go to acts to the brain
+32:32
+this was images test 18 I'm gonna ask
+32:36
+the brain give me a prediction what do
+32:38
+you think what do you think this is and
+32:42
+I look at the value of that prediction
+32:44
+it is an 8 so it has correctly
+32:47
+identified it as an 8 so in this case
+32:50
+this was performing it up like 98% so
+32:52
+it's already doing really well but let's
+32:55
+look at what is it that it's not doing
+32:57
+so well so the first thing I'm gonna do
+32:59
+is instead of just predicting that one
+33:01
+image I'm gonna predict all the images
+33:04
+that are in that data set and to figure
+33:07
+out how many images are in that data set
+33:09
+that I can just do images test dot what
+33:15
+the people know dot shape we use that
+33:19
+shape because this is multi-dimensional
+33:23
+this is not just an array it's multi
+33:25
+dimensional so here are 10,000 images 28
+33:29
+by 28 okay so we're gonna pass in the
+33:31
+images test notice we didn't pass the
+33:34
+labels just the images and then it's
+33:36
+gonna give us its predictions and then
+33:39
+here this is shorthand to say tell us
+33:44
+the indices where the labels that we had
+33:47
+didn't match the predictions so we're
+33:52
+gonna run that code initially let's see
+33:53
+how many
+33:54
+wrong so here I can do incorrect
+33:57
+dot sorry so we're gonna visualize in a
+34:04
+second but here I'm just getting a sense
+34:05
+of how many they are so here there's we
+34:08
+got two hundred and eighty five images
+34:10
+that were incorrect
+34:12
+okay so let's visualize what is actually
+34:15
+happening okay let's see so if we look
+34:22
+at this one the actual one if we look at
+34:26
+this one the actual was a five but it
+34:29
+thought it was a nine and this seems
+34:30
+like a reasonable thing to do because
+34:32
+the five here it's as this like squiggle
+34:35
+so it almost looks like a nine this
+34:37
+seems like a reasonable thing to do if
+34:39
+you look at this one the actual was the
+34:41
+three but it thought it was a two
+34:42
+because they were close enough like the
+34:45
+edges weren't really there this one
+34:47
+doesn't look like a four at all but it's
+34:49
+supposed to be a four so it seems this
+34:52
+is when you tell if you see results like
+34:53
+this the model is actually doing pretty
+34:56
+well because some of these things are
+34:57
+genuinely hard but if you look at this
+35:00
+and say like okay this seems really easy
+35:03
+then it means like you should be worried
+35:07
+something could be not right with your
+35:08
+model
+35:16
+so if you look at its possible
+35:20
+so more training in most cases shouldn't
+35:24
+hurt but it's not necessarily going to
+35:26
+get better like you'll realize well
+35:31
+let's see that's yeah that is true let's
+35:39
+see well let's see let's look at another
+35:41
+one let's look at another sample 169 yep
+35:49
+so so he has a better brain because it
+35:51
+happened that his brain learned better
+35:53
+in this case okay well in these examples
+35:57
+it's actually they seem plausible like
+36:00
+that one that it's at the very top right
+36:03
+it's way too tilted the four is also way
+36:08
+too squiggled the seven is like way too
+36:11
+thick this seems reasonable yes probably
+36:14
+more training would solve this problem
+36:15
+that makes sense okay so this was some
+36:19
+of the things that we talked about
+36:20
+yesterday and an exercise which I was
+36:24
+hoping to get to yesterday but didn't
+36:25
+because the setup took a little bit
+36:27
+while is now with the knowledge that we
+36:30
+know here can we teach that same brain
+36:32
+no changes till they're in English
+36:34
+digits and so the exercise I'll show you
+36:38
+let me just figure out this if I go to
+36:41
+exercise one you'll find this any
+36:44
+repository as well so this data set
+36:51
+so this data set is hosted on a website
+36:55
+called Kegel and this is actually a
+37:00
+competition so this is a competition or
+37:02
+Kegel is a website for hosting machine
+37:04
+learning competitions so if you go to
+37:05
+Cairo you'll actually find dozens and
+37:08
+dozens of really cool competitions and
+37:10
+some of them have prize money of like a
+37:12
+dollars if you get the best machine
+37:14
+learning model for it so some of the
+37:17
+competitions you'll see is identifying
+37:20
+whether or not there's a tumor in an
+37:22
+image or trying to give in an image with
+37:27
+a car to figure out where the car is and
+37:29
+strip it out of the image very
+37:31
+interesting stuff so if you have the
+37:32
+time check that out so one of the
+37:34
+competition's that they have for
+37:36
+starters is the digit recognizer image
+37:39
+so this is a data set with the English
+37:41
+digits so we're gonna download that data
+37:43
+set and then we're gonna do a very
+37:47
+similar thing to what we did before
+37:50
+we're gonna load the data set and what
+37:55
+was the one tip I mentioned about
+37:56
+working with data sets something that a
+38:00
+lot of people don't do when working with
+38:02
+images visualizing yes so so here I put
+38:06
+it to do the visualize so let's go ahead
+38:09
+and do that and so visualize the show
+38:12
+example and here I'm gonna pass it the
+38:16
+images as well as the labels okay so it
+38:25
+looks very similar to the other data set
+38:28
+that we have except it's in English okay
+38:32
+and now we're going to build the brain
+38:34
+and all we had to do for this exercise
+38:36
+was we're gonna use the brain on Drake
+38:38
+that we have before so I'm gonna go
+38:40
+ahead and create a new object brain and
+38:45
+then I'm going to make a brain learn
+38:49
+from the images
+38:58
+cool so it's starting to learn exactly
+39:01
+the same processes we had before so here
+39:04
+it split the dataset 80% of it went into
+39:07
+training the other 20% it's using for
+39:10
+validation and notice at the beginning
+39:11
+here and had a bit of a poor start it
+39:14
+was at 92% and then over time has bumped
+39:17
+up to 98% 90 and here 95 all the way to
+39:22
+97 so comparable performance this is the
+39:25
+same brain wouldn't change anything
+39:27
+about it just like a human brain one
+39:30
+brain is speaks Arabic another speaks
+39:31
+Hindi or whatever language that is okay
+39:35
+so let's test it out so I'm gonna load
+39:39
+some test images and also what's the tip
+39:42
+that I asked for 30 seconds ago we're
+39:46
+gonna visualize again always visualize
+39:53
+example I'm gonna give it some of the
+39:58
+images test okay so they look pretty
+40:03
+similar well this one might be a bit
+40:05
+hard to predict and then we're actually
+40:07
+going to ask our brain to do predictions
+40:10
+so I'm gonna run it and ask you to
+40:14
+predict it and then give it the test
+40:21
+images
+40:27
+okay we're getting in here or some sort
+40:30
+oh I said I should have predict many so
+40:37
+predict was for a single image predict
+40:39
+many is for multiple images okay so it
+40:43
+has predicted all 28,000 images let's
+40:47
+see what this looks like so here this is
+40:52
+a array of 28,000 numbers each one would
+40:55
+be corresponding to the prediction of
+40:57
+the equivalent image in the images test
+41:01
+now the final thing is we actually don't
+41:06
+have the labels for these images meaning
+41:10
+that I don't know how much how well it
+41:13
+actually did for these images and that's
+41:16
+the whole point of that competition on
+41:18
+Cagle you would build a brain and then
+41:21
+you would train it and then they give
+41:23
+you a test data that's unlabeled and
+41:25
+then you give the predictions from your
+41:28
+brain and then you give it a Kegel and
+41:29
+I'll give you a score so here I wrote a
+41:32
+little function for you
+41:33
+that is going to take these predictions
+41:35
+and then it's gonna write a file called
+41:39
+submission dot CSV so if I go back to my
+41:45
+repository okay it's right here no it
+41:51
+was just modified today and this is what
+41:55
+the submission file looks like
+41:56
+so the idea each image as well as the
+42:00
+label that our brain thinks is correct
+42:03
+so we're gonna take the CSV and then you
+42:08
+can go to Cagle submit predictions and
+42:11
+then here you can upload I was gonna be
+42:15
+challenging with one
+42:17
+[Music]
+42:22
+you're gonna upload your submission dot
+42:26
+CSV and then you click make submission
+42:35
+and now it's actually checking against
+42:39
+the labels because it knows the right
+42:41
+the correct values and it gives you a
+42:43
+score oh and Here I am I got a 97 around
+42:47
+97% not the best because some people got
+42:51
+much much higher scores but it's no
+42:53
+pretty good and so if you go through
+42:56
+that notebook exercise 1 you'll be able
+42:58
+to make a submission on keggle you
+43:00
+should know if you haven't done so
+43:01
+already okay cool so that was the
+43:04
+material that I wanted to cover
+43:05
+yesterday if you haven't been through
+43:07
+the exercise please do and now we're
+43:10
+actually going to get into a little bit
+43:12
+more theory and maybe one obvious
+43:16
+question that you've had as I was going
+43:18
+through this is what is this brain thing
+43:22
+that we've been using and so this gets
+43:25
+back to one thing that we talked about
+43:28
+yesterday the brain can consisting of
+43:31
+neurons and synapses what we know that
+43:34
+in this thing you have over 80 billion
+43:38
+neurons that are connected with each
+43:40
+other with trillions of connections
+43:43
+about 150 trillion of them and that each
+43:46
+neuron it has a seat so a neuron can be
+43:49
+active or inactive and a neuron can
+43:53
+transmit messages to neighboring neurons
+43:55
+to activate them or deactivate them so
+43:59
+at any point in time there's a
+44:00
+configuration in your brain of which
+44:03
+neurons are
+44:04
+and which ones are not active and
+44:05
+somehow this is map to your thoughts and
+44:09
+the more neurons that you have and more
+44:11
+synapses in theory you should have more
+44:14
+computational power okay so let's go
+44:17
+back to that very simple building block
+44:21
+of what is in Iran and here we're going
+44:23
+to move from biology to computers so
+44:27
+let's start with what a neuron is in the
+44:29
+land of computers so a neuron is the
+44:33
+building block that we'll be using and
+44:35
+you can think of it as something that
+44:36
+takes in an input could be one input can
+44:40
+be many inputs and it makes a decision
+44:43
+whatever that decision is so let's look
+44:45
+at an example let's say I want to figure
+44:49
+out whether I should study computer
+44:51
+science or not so there are several
+44:52
+factors that go into that decision let's
+44:54
+say do I think this is an interesting
+44:58
+field that's an important factor are
+45:01
+there jobs available after I graduate is
+45:05
+there a good school that's nearby and
+45:07
+close to home so these are all factors
+45:09
+that would help me make that decision
+45:12
+and so here I'm gonna take all of these
+45:14
+factors I'm gonna put them in variables
+45:17
+so for the first factor I'm gonna call
+45:20
+it x1 second factor x2 third factor x3
+45:24
+and I'm gonna give the variable a 1 if
+45:27
+the answer to that question is a yes I'm
+45:30
+gonna give it a 0 if the answer is a No
+45:33
+so for example let's say I think
+45:37
+computer science is interesting and
+45:39
+there are jobs but the school isn't
+45:42
+close to home what would be the values I
+45:47
+didn't hear that one 1 0 that's right
+45:53
+let's try another example there are
+45:57
+great jobs in computer science but there
+45:59
+isn't a school nearby
+46:00
+and I don't find it that interesting 0 1
+46:03
+0 is this clear to everyone
+46:06
+ok so we've taken the factors that we
+46:09
+have and we encoded it into
+46:12
+variables the next thing we're gonna do
+46:14
+is so these are the factors we're
+46:17
+feeding and turning on and the neuron is
+46:19
+gonna take these three things and make a
+46:21
+decision but how are we gonna make that
+46:24
+decision
+46:24
+well one way we could do it is using
+46:28
+what we call a decision function and
+46:30
+this is what we're gonna use so we're
+46:33
+gonna sum up all the X's that are here
+46:36
+and if the value of this sum is above a
+46:40
+certain threshold we'll say yes and if
+46:44
+it's less than or equal to that
+46:45
+threshold we'll say no it makes sense so
+46:49
+far
+46:49
+any questions Oh so threshold here is a
+46:53
+bit bulky so I'm just gonna rephrase
+46:56
+threshold to theta cool okay so let's
+47:00
+look at the examples that we've had
+47:02
+before let's see it I set the threshold
+47:05
+to be 1 okay I think you're cuter size
+47:10
+is interesting there are jobs but the
+47:13
+school isn't close to home we've already
+47:15
+mentioned how this is encoded x 1 is 1 x
+47:17
+2 is 1 x 3 is 0 now based on this
+47:20
+decision function what should be my
+47:22
+decision
+47:24
+why else exactly so i some yes i sum
+47:29
+them all up exactly
+47:31
+so I sum them all up it's 2 which is
+47:33
+greater than the threshold so I should
+47:35
+go okay
+47:37
+now second example there are good jobs
+47:40
+in computer science there isn't a school
+47:43
+nearby and I don't find it that
+47:45
+interesting you should not go yes so in
+47:49
+this case an equals 1 which is less than
+47:52
+or equal to theta and so I wouldn't go
+47:56
+to computer science you see it's a
+47:59
+neuron as a very simple thing but it's
+48:01
+able to capture simple decision models
+48:05
+ok let's look at a more abstract example
+48:08
+so let's say I want to implement and
+48:10
+or gate so in this case I have two
+48:13
+inputs x1 and x2 so I have whenever
+48:17
+they're both 0 the decision is 0 and for
+48:20
+all the other states if any of them is 1
+48:22
+my decision will be 1 so now I need to
+48:26
+find out a value of theta that would
+48:30
+make this true and so let's say I should
+48:33
+say that to be 0.5 does this work well
+48:37
+let's see so at 0 and 0
+48:41
+I'll add them all up at 0 which is less
+48:44
+than 0.5 and so the decision is 0 as
+48:47
+expected at 0 1 x1 plus x2 is 0 plus 1
+48:52
+which is 1 also which is greater than
+48:55
+0.5 greater than my threshold and so
+48:58
+it's yes for 1 and 0 that's the same
+49:01
+thing and for 1 and 1 the sum is to stay
+49:05
+at 0.5 so my decision is 1 and so one
+49:08
+neuron was able to implement an or gate
+49:11
+and one way to visualize this is these
+49:14
+are the four points that we've had here
+49:16
+the white ones are where I want the
+49:19
+decision to be won the black dot is
+49:22
+where I want it to be 0 and when I put
+49:25
+theta to be 0.5 I'm actually drawing a
+49:28
+line that separates the white circles
+49:33
+from the black circles this is the line
+49:35
+where things equal theta so here it's at
+49:38
+0.5 and here's that point 5 any
+49:41
+questions so far
+49:42
+make sense ok let's try a NAND gate we
+49:48
+also need to figure out a theta to make
+49:50
+it work let's say we do any guesses
+49:55
+actually and what theta could be more
+50:00
+than one that's correct
+50:02
+so yes exactly exactly
+50:05
+and so if we choose theta to be equals
+50:07
+one point five looks like it
+50:09
+examples 0 0 less than 1.5 so that's the
+50:14
+decision is 0 at 0 1 it's less than 1.5
+50:18
+so I just a 0 X 1 and X 2 it's also less
+50:22
+than 1.5 1 and 1 it's 2 which is greater
+50:26
+than 1.5 so the decision is 1 and notice
+50:30
+1.5 isn't the only solution like 1.1
+50:33
+could have worked 1.2 or even yeah
+50:37
+exactly exactly exactly and again
+50:40
+visualizing it in the case of the end we
+50:43
+only want this value to be decision 1
+50:45
+and so we've moved the line from where
+50:48
+it was for the or to here separating the
+50:53
+white circles on one side the black
+50:54
+circles on the other okay let's try
+50:57
+another example and in this case I want
+50:59
+to implement an XOR so an X for in case
+51:02
+you don't remember you only want the
+51:04
+decision to be 1 1 only one of the
+51:07
+values is 1 different digits
+51:11
+what do you mean 2
+51:18
+learning different digits oh yes
+51:26
+yes exactly like this this is correct
+51:30
+right so what would motivate abhi that
+51:35
+would work for this
+51:40
+well so that actually won't work
+51:43
+that won't work between two values seven
+51:51
+yeah I think I figure I should I pretty
+51:53
+close so if you look at if you look at
+51:56
+this visualization there's something
+51:58
+different there's something different
+52:00
+about this then say the end notice that
+52:04
+in the case of the end I was able to
+52:07
+draw a line that separates the white
+52:10
+we're decision has one on one side and
+52:12
+the decision is zero on the other side
+52:15
+and the or was the same thing
+52:17
+you can't yes exactly but you can't have
+52:22
+a curve in upper in a neuron so and
+52:26
+you're on a single neuron can't capture
+52:28
+this I can't do an XOR with a neuron
+52:31
+it's not possible but what is possible
+52:35
+there's more than one neuron so I'll put
+52:38
+two lines and I will say everything
+52:41
+that's between these two lines is gonna
+52:44
+be a white circle and everything outside
+52:46
+of that is black and so how are we gonna
+52:49
+implement this remember this line this
+52:52
+was the same or line that we had before
+52:54
+and so yeah so there's an or we know
+53:00
+there's an or yeah yes there corresponds
+53:04
+to an or and this was an end the end
+53:06
+line that we had but the end line is
+53:08
+different because the end made all the
+53:11
+the circles on this side white and this
+53:14
+one black we want the reverse of that
+53:16
+and so to do that we'll put everything
+53:19
+will be will be in not end basically
+53:22
+you'll reverse everything and then you
+53:24
+want things to be the ones that are to
+53:28
+the right of this one and the ones to
+53:30
+the left of this one and so the end
+53:32
+these two
+53:33
+results and you'll get your decision and
+53:36
+so if I expand this we've built on or
+53:38
+we've built an end so the full neural
+53:42
+network gives the member oh I feel 0.5
+53:44
+the end theta 1 point 5 for the knot and
+53:47
+I actually took the negative of the
+53:50
+inputs and I put in the negative of the
+53:53
+theta this is how you can do a knot in a
+53:55
+neuron and the UCSC in this case I took
+53:59
+a very simple neuron that's capable of
+54:03
+doing very simple decisions and I put
+54:05
+them together in blocks to solve
+54:08
+something that's more complex and so you
+54:11
+can imagine these are three neurons if I
+54:14
+put hundreds or thousands or millions or
+54:18
+in the case of your brain billions and
+54:20
+billions of them it is able to do things
+54:22
+that are much much much more complicated
+54:24
+like recognizing digits like singing
+54:27
+like dancing like driving a car and so
+54:29
+forth okay so a couple of things I don't
+54:32
+have to cover if I go back to the
+54:35
+original example some of these things in
+54:41
+general there's so many cases where some
+54:44
+of these factors are more important than
+54:46
+others for example maybe I think the
+54:50
+fact that if the subject is interesting
+54:52
+me and matters a lot more that there is
+54:54
+a school close to home and so to
+54:57
+represent that yes with weights exactly
+55:01
+so we're gonna be introducing weights
+55:02
+and so every connection that you see
+55:05
+here will be weighted and so instead of
+55:08
+the decision function just being these
+55:10
+sons of the X's it becomes the access
+55:15
+times the W's so be doing x1 times the
+55:17
+we 1 x2 times that we to have students
+55:20
+away 3 that's something those all up and
+55:22
+checking if it's greater than or equal
+55:24
+to the threshold any questions so far
+55:27
+cool ok so let's try an example I think
+55:33
+computer science those the example we
+55:34
+had before
+55:35
+we've encoded into x1 x2 but let me add
+55:38
+I only care about getting a job after I
+55:40
+graduate and I don't care about anything
+55:42
+else yeah yeah so what should the
+55:45
+weights be yeah 0 1 0 or 0 10 0 it
+55:52
+doesn't matter what w2 is as long as
+55:54
+it's positive ok for the same example
+55:59
+what if I say be interested in the
+56:02
+subject is very important to me and I
+56:04
+actually want to move too so it's better
+56:06
+if the school is far away so if I do a 0
+56:19
+for the second one it means that I don't
+56:20
+care about jobs 1 well but I do care I
+56:25
+do care about jobs but yeah and so for
+56:29
+this one so here I actually want the
+56:32
+opposite so the opposite of this I want
+56:34
+the opposite of this so w3 should be a
+56:38
+negative number and this should be a
+56:40
+greater number than this one it doesn't
+56:42
+matter what the values are so 2 1
+56:44
+negative 120 10-15 as long as just that
+56:48
+as long as you're having the right
+56:50
+ratios that's what matters
+56:53
+ok now you might be wondering ok we've
+56:57
+shown how to have a neural group of
+57:00
+neurons to create decisions sometimes
+57:04
+more complicated decisions but where's
+57:06
+the learning like how does this tie to
+57:07
+actually learning things so learning is
+57:10
+figuring out which parameters and
+57:13
+thresholds to use so in the case of the
+57:16
+digits problem that we did with Arabic
+57:18
+and English they are the same network of
+57:21
+neurons the only difference is that we
+57:24
+chose different weights and different
+57:25
+thresholds and the connections to make
+57:28
+it learn Arabic versus learn English but
+57:31
+it's the same Network structure and so
+57:34
+this is what learning is and this is
+57:36
+also what learning is inside the human
+57:38
+brain as far as we know as far as I know
+57:43
+so in this case we have four parameters
+57:46
+we have three weights and a theta what
+57:52
+about this one how many parameters do we
+57:54
+have this was the neural network or the
+57:57
+coup and the group of neurons by the way
+57:58
+is known as a neural network for it was
+58:03
+more there's an item so every connection
+58:06
+here has a weight one two three four
+58:09
+five six and there are three thresholds
+58:13
+to figure out as well so it's a total of
+58:16
+nine parameters I notice here we made a
+58:20
+I've made a leap we've actually changed
+58:24
+the learning problem into an
+58:27
+optimization problem which is something
+58:29
+that has been studied for a long time
+58:32
+and so here we want to choose the
+58:35
+parameters the weights and the
+58:37
+thresholds to minimize our error but
+58:41
+what is the error you can define the
+58:43
+error in whatever way you like so one
+58:47
+definition for the error could be the
+58:50
+mean squared error which is I look at
+58:53
+what is the correct value and what is
+58:55
+the predicted value and I take the
+58:57
+square of the difference but you can
+59:00
+have different values that you can have
+59:01
+different error functions as well
+59:04
+and you'll need an algorithm that takes
+59:06
+this error and tweaks the weights and
+59:09
+thresholds to minimize the error and so
+59:13
+one there are several algorithms again
+59:15
+to use but one very common one it's
+59:17
+called stochastic gradient descent this
+59:20
+was all right as will demonstrate in the
+59:22
+code shortly this is something that
+59:24
+we'll be using to actually optimize
+59:26
+these weights now how does this
+59:29
+algorithm work and the definition of
+59:31
+this I think that'll be too deep for
+59:33
+this session I would rather you to focus
+59:35
+on the high level code of how to use
+59:37
+these different building blocks to those
+59:39
+neural networks to learn things but
+59:41
+there are plenty resources to look into
+59:44
+maybe this is something
+59:45
+do in the future if people are
+59:46
+interested okay so another thing is we
+59:51
+said that a position function is the
+59:54
+summing the axis times weights and it
+60:00
+has the value of one when it's greater
+60:01
+than a particular threshold and zero
+60:03
+when it's less than a particular
+60:04
+threshold so it's a step function but
+60:09
+sometimes the decisions aren't always
+60:11
+this binary it's not like I'm gonna
+60:13
+study computer science I study computer
+60:14
+science and then fine I'm gonna I'm all
+60:16
+in and I'll study everything that I can
+60:18
+in computer science is usually like
+60:19
+varying degrees and so you can use
+60:22
+different decision functions depending
+60:24
+on how you want your neuron to behave so
+60:27
+for example there these are some
+60:29
+functions that you will see when you
+60:30
+look at code bases of machine learning
+60:33
+so sigmoid values softmax this is what a
+60:36
+sigmoid function looks like for example
+60:37
+and so it's good to use the sigmoid
+60:40
+function in your decisions because then
+60:42
+you'll have a degree of confidence in
+60:45
+your decision as opposed to yes or no so
+60:49
+sigmoid is one of the functions that you
+60:51
+can use as well okay so we talked about
+60:55
+neurons we showed how neurons are
+60:59
+grouped together to make more complex
+61:01
+decisions we mentioned that a group of
+61:03
+neurons is a neural network now we're
+61:07
+gonna talk about what is the neural
+61:08
+network that we used to recognize digits
+61:11
+in those examples so we took an image 28
+61:17
+by 28 image 24 pixels and this is the
+61:20
+label that we're using so here this is
+61:23
+actually a vector of ten digits and this
+61:26
+is saying that the label is seven so I'm
+61:29
+putting zero for everything and I'm
+61:31
+putting one for the value
+61:33
+that I want and explain why we do this
+61:34
+in a minute and then the first thing
+61:36
+we're gonna do is we're gonna flatten
+61:39
+this two-dimensional matrix I'm gonna
+61:43
+make us just one long 784 by one vector
+61:48
+and then we're gonna build a layer of
+61:51
+neurons in this case I'm gonna add 512
+61:54
+and it runs and I'm getting connected
+61:56
+each one of these pixels to all 512
+62:01
+neurons so the first one is connected to
+62:04
+all 512 the second one to all 512 and so
+62:08
+on and so forth
+62:08
+and then I'm gonna make another layer
+62:11
+with 512 neurons I'm gonna connect
+62:14
+everything in this layer to this layer
+62:17
+the same way and then finally I'll be
+62:21
+doing what's called the atomic put so
+62:23
+here I have 10 neurons and being output
+62:25
+in each of these neurons they're all
+62:26
+connected to this layer the output of
+62:29
+these neurons will be the probability
+62:32
+corresponding to that particular digit
+62:35
+being the correct digit so in the case
+62:38
+of 7 I expect the seventh note to have a
+62:43
+significantly higher value than all the
+62:46
+other ones so why two layers why did I
+62:51
+choose 512 neurons here there's
+62:55
+unfortunately no good answer to that so
+62:57
+there's nothing at least so far there is
+63:01
+no known science where you look at a
+63:03
+problem and you put it in a formula
+63:06
+tells you you should use two layers 512
+63:09
+neurons each and you're gonna get the
+63:11
+best output this is actually largely
+63:14
+unknown so right now people actually
+63:17
+they have heuristics on what would be
+63:20
+good like generally adding more layers
+63:22
+and gets better learning but it's at the
+63:25
+cost of slower training time but it's
+63:29
+largely an art and you try different
+63:32
+stuff I eventually see that patterns
+63:34
+emerge but putting that pattern and
+63:37
+science has yet to be done and it is
+63:40
+frustrating I know
+63:41
+so 512 was chosen at semi random you can
+63:45
+read some guidelines of some ways of
+63:49
+designing good neural networks but it
+63:50
+wouldn't be it's not a science there is
+63:52
+no exact reason why this is 512 I'm not
+63:56
+600 but today when you're building your
+64:00
+own neural networks you should try try
+64:03
+adding more layers try changing the
+64:04
+number theorems try changing the
+64:07
+decision functions that we use try
+64:09
+changing the error and see how this
+64:11
+impacts your performance okay so we've
+64:14
+expressed the general structure of the
+64:16
+neural network that we built let's look
+64:19
+at the actual code sure yes that I don't
+64:37
+know the exact relationship like I would
+64:39
+I don't know if it's linear or not but
+64:42
+that is one thing that would be worth
+64:43
+testing out today for sure but to give
+64:46
+you a sense of the state of the art that
+64:48
+is there today for example there is a
+64:52
+very well known competition called image
+64:55
+net where they would have many May I
+64:58
+think on the order of millions of images
+65:00
+and then you have to classify it into a
+65:02
+thousand different categories like dogs
+65:04
+and insects and plants and so forth and
+65:07
+the state of the art of 2013 was a model
+65:11
+called vgg 19 and so it had 19 layers
+65:16
+like this I don't know the exact sizes
+65:19
+but I'm sure
+65:20
+bigger than 512 so it's massive and so
+65:24
+training a network of that size would
+65:25
+take days you probably want to run it on
+65:28
+GPUs we're gonna be using the CPUs right
+65:31
+now you'll probably want to run it
+65:32
+across multiple machines it gets vastly
+65:34
+more complicated but digits they're
+65:37
+simple enough that you can run it on one
+65:40
+machine it's faster train and it's a
+65:42
+much smaller problem so you don't need
+65:44
+neurons of that size any questions
+65:49
+are there questions okay so I'm gonna
+65:53
+jump into the code and the machine
+65:57
+learning Gregory we're gonna be using to
+65:59
+do neural networks
+66:01
+it's called Kiera's so you're gonna
+66:03
+start by importing Charis and then first
+66:09
+you're gonna define remember what we
+66:10
+talked about in a brain actually when
+66:13
+you're writing in machine learning
+66:14
+terminology it's called a model so the
+66:16
+model is exactly what that brain was
+66:19
+that we talked about before and I say
+66:21
+it's a sequential sequential basically
+66:24
+means that it's a it's a sequence of
+66:26
+layers you can have a graph where
+66:29
+different layers are thinking but for
+66:32
+the purposes of today it's all just a
+66:34
+sequence of layers so okay so it's a
+66:39
+sequential and now what we gonna do I'm
+66:42
+gonna flatten the input if you remember
+66:45
+the first step that we had we took the
+66:46
+image and we flattened it into one
+66:49
+factor so here and telling it the input
+66:51
+is 28 by 28 and I'm flattening it to be
+66:55
+one vector the next thing is we had a
+66:59
+layer of 512 mini runs and so I can do
+67:03
+that by saying dense dense is saying
+67:07
+connect all the 784 values that are here
+67:13
+to all these 512 neurons that are you
+67:17
+and the activation think about that's
+67:19
+the decision function that we were
+67:21
+talking about revenue is one of the
+67:23
+decision functions you don't have to use
+67:25
+it but it is actually the nice thing
+67:30
+about it is that it's it speeds up the
+67:33
+training so if you try other functions
+67:35
+that should still work but rarely you
+67:37
+generally is a good practice for middle
+67:39
+layers I'll talk more about that in a
+67:41
+second and then the next one we're gonna
+67:44
+have another layer of 512 so it's
+67:47
+exactly the same thing and then finally
+67:50
+we're gonna give it the last layer of
+67:53
+ten neurons now the last layer should be
+67:56
+corresponding to how many different
+67:59
+types of things you're labeling so in
+68:01
+the case of the digits we have ten
+68:03
+digits sorry yeah exactly
+68:05
+zero to nine sorry ten digits and so I
+68:07
+want ten neurons to be not output and
+68:11
+here I'm choosing softmax as my decision
+68:15
+the reason we're choosing softmax as
+68:17
+opposed to something else is that we
+68:19
+want the outputs of these ten neurons to
+68:22
+be a probability so that's when you use
+68:25
+a soft max this makes sure that all the
+68:27
+some of these neurons sums up to one and
+68:30
+so when you look at the output you can
+68:32
+interpret that as the probability for
+68:34
+that neuron to be equivalent to that
+68:36
+corresponding digit so this is the
+68:39
+neural network that we have and then
+68:42
+finally this is now that we've outlined
+68:44
+the architecture you want to call it how
+68:47
+do you measure error and what algorithm
+68:49
+that you want to use to minimize the
+68:52
+error and that's what we're gonna do
+68:54
+point I use the mean squared error as we
+68:57
+talked about before and the algorithm or
+69:00
+the optimizer is a casting in gradient
+69:03
+descent and you can optionally add
+69:07
+another so you just leave it at that
+69:10
+then when you're learning it's only
+69:12
+going to show you the
+69:13
+error which sometimes it's not as easy
+69:15
+to understand if you add accuracy of to
+69:19
+your metrics it'll show you the
+69:21
+percentage of images that it got right
+69:24
+which ones they got wrong so this is an
+69:26
+extra to see and you can look up
+69:28
+appearance has a really good
+69:29
+documentation so you can look into what
+69:32
+is dense how it works what are the
+69:34
+different activation functions that you
+69:36
+can use what are the different loss what
+69:38
+are the different optimizers that you
+69:40
+can use you can try all these different
+69:42
+configurations on various data sets that
+69:44
+are out there on cattle or otherwise and
+69:46
+explore how that actually changes things
+69:50
+you can add more layer there's a lot of
+69:51
+things that you can play with here so if
+69:54
+I put this code in the English digits it
+69:59
+should work if I go back I'm just gonna
+70:08
+copy this
+70:12
+and I'm going to go here yeah restart ok
+70:19
+so this was the English data set that we
+70:23
+had before this is double check this is
+70:27
+the one
+70:42
+I didn't love the Deus
+70:53
+okay and here I'm just gonna paste in
+70:56
+that code
+70:57
+so here I've made my model and this is
+71:02
+actually code that I didn't talk about
+71:03
+and I'm considering leaving it for you
+71:08
+to figure out what it is because
+71:09
+otherwise the exercise will be way too
+71:11
+easy but think of this code block as
+71:13
+what's gonna is the equivalent of
+71:15
+actually making it learn and so now it's
+71:19
+learning and here I used actually
+71:23
+different error and optimizers in the
+71:25
+brain Python file so this one actually
+71:29
+is training because I used a different
+71:30
+algorithm this algorithm is a little
+71:33
+slower so you'll see it's starting at
+71:34
+20% as opposed to the 96% that we had
+71:38
+before but it's slow it's catching up
+71:41
+slowly
+71:41
+so here it's at 78% now it's getting to
+71:46
+85 and if we give it enough time it'll
+71:50
+get to similar levels that we've had
+71:52
+before okay so now we're gonna move on
+71:57
+to exercise 2 and in this exercise there
+72:06
+is another data set on cat go if the
+72:11
+Internet is cooperating
+72:19
+this is a data set of Arabic characters
+72:23
+so what you're gonna do is you're gonna
+72:26
+go to that link you should have all
+72:28
+downloaded this data set that anyone not
+72:30
+get it we have that look over here if
+72:31
+people need it okay cool so we're gonna
+72:34
+get this data set and then again you're
+72:37
+gonna go into your data sets folder
+72:39
+you're gonna go to Arabic characters and
+72:42
+you're gonna dump the files here and
+72:46
+we're gonna do what we have done before
+72:51
+let's see the characters so this is very
+72:57
+similar to the image problem except
+73:00
+instead of having ten digits in this
+73:02
+case allowed 28 Arabic letters and so
+73:05
+the label that you see on top of the
+73:08
+image it's corresponding to the index of
+73:11
+that letter in the Arabic alphabet so
+73:13
+Aleph is a one but it's a two to the
+73:16
+three until you get to yeah
+73:17
+at 28 okay so in this exercise try let's
+73:25
+not use the brain make I want to build a
+73:28
+model or a brain that would learn these
+73:32
+digits using Kerris if you actually try
+73:35
+to use the brain it's not gonna work
+73:36
+it will give you an error so I want you
+73:40
+to look into the code of the brain and
+73:42
+I'll also show the sample of code that I
+73:44
+that I just shared it I'll keep it on
+73:46
+the screen look through that notebook
+73:48
+and try to write the Kiera's model that
+73:51
+would make this learn now if you look at
+73:55
+the size of this data set remember that
+74:01
+shape yes
+74:04
+so here we have 13,000 440 and it's a 32
+74:10
+by 32 image so the data set here is
+74:13
+actually a lot smaller than what we've
+74:16
+had before and at the same time the
+74:19
+number of labels in this case it's 28
+74:22
+it's a lot higher so the number of
+74:25
+examples for every label there's a lot
+74:28
+less so you'd expect that the brain
+74:31
+wouldn't be able to learn as well as it
+74:33
+did with the other one because you had a
+74:35
+lot more data for it but try it out see
+74:39
+what numbers you can get any questions
+74:45
+before we move on to the coding part the
+74:48
+fun part oh yeah
+75:01
+so let's let's look at that actually a
+75:04
+little bit more closely so if I go to
+75:07
+let's say here here I made a prediction
+75:13
+of this image and what I'm gonna do
+75:18
+instead is I'm gonna use Karis directly
+75:20
+here predict I think this works see I'll
+75:31
+need to check this in tax PC
+75:39
+[Music]
+75:41
+all three dimensions
+75:51
+oh listen one second I'll get this
+76:07
+go need to look at the comment to get to
+76:09
+you but the output if you use the model
+76:12
+dot predict that I was trying to use
+76:14
+here I don't figure out the syntax
+76:15
+shortly it actually outputs the
+76:18
+probabilities of each of the layers the
+76:22
+output layers so each of the ten that is
+76:25
+almost impossible for you to have two
+76:28
+numbers to be exactly the same because
+76:30
+these numbers have very high precision
+76:32
+and so it's almost impossible in which
+76:35
+case it takes just one of them but
+76:39
+that's a rare occasion it just takes one
+76:42
+at random yeah but I'll I'll show you
+76:45
+that code in a second once I get the
+76:47
+syntax any other questions
+77:00
+here tonight that's right that's right
+77:11
+that's a very good question so
+77:13
+Carris is actually a wrapper on top so
+77:17
+typically these days actually let me
+77:20
+back up right now and the question was
+77:24
+what is the difference between carrots
+77:27
+and tensorflow
+77:28
+so in the early days of neural networks
+77:31
+everything was trained on the CPU which
+77:35
+was pretty much what we're doing right
+77:37
+now and later as neural networks became
+77:41
+a bigger thing it actually requires a
+77:44
+lot of as we saw there's a lot of
+77:47
+matrices there's a lot of vectors
+77:48
+there's a lot of scalar multiplication
+77:50
+that's going on there so there's a lot
+77:52
+of nature C's involved and GPUs thanks
+77:55
+to the gaming industry are remarkably
+77:57
+good at that so we started moving some
+77:59
+training on the CPU the training on the
+78:01
+GPU tensorflow came about to help out
+78:04
+with the problem of I have many many
+78:07
+GPUs in a training a large network and I
+78:09
+want to distribute the computation
+78:12
+across multiple GPUs Harris is actually
+78:16
+a layer on top of tensorflow
+78:18
+so it actually let me just get a notepad
+78:22
+so the the flow that you have if you're
+78:26
+using the GPU is you have right now
+78:32
+Kharis that's like think of that as like
+78:34
+the top layer and afterwards that can be
+78:41
+using that Kiera's as a wrapper to
+78:43
+several libraries so you can use
+78:46
+tensorflow or you can use another
+78:52
+equivalent library called fionna and in
+78:57
+turn these libraries what they do is
+79:00
+they take the commands that you give
+79:04
+them
+79:05
+they compiled them into a language
+79:08
+called CUDA and CUDA is the language
+79:11
+that's used for NVIDIA chips that are
+79:14
+currently used for training large neural
+79:17
+networks so Cara's has a higher level
+79:19
+API that tensorflow it's a simpler API
+79:22
+to use but in the backend you could be
+79:25
+using tensorflow
+79:26
+if you look at the notebook here it says
+79:29
+using fionna back-end if I can change
+79:32
+that so I can open up the Karis config
+79:41
+so here I'm choosing to Fiona as my
+79:44
+back-end I can change that and put in
+79:47
+tensorflow
+79:50
+and assuming that tensorflow is
+79:54
+installed if I reinforce this I'll show
+79:57
+you just a restart
+80:05
+now it's using tensorflow so I have
+80:08
+reconfigured Kerris to use tensor flow
+80:11
+in this case as opposed to Fiona and
+80:15
+another thing that you can actually
+80:16
+configure in the JSON you can actually
+80:21
+in this configuration file you can
+80:23
+change it from training on the CPU or at
+80:25
+the GPU versus the CPU here and I do not
+80:28
+have a CUDA GPU so this is not going to
+80:31
+be possible but in cases where you
+80:34
+actually want to take this further what
+80:36
+I usually do is I would rent on Amazon I
+80:39
+would rent an instance with an NVIDIA
+80:41
+GPU and then I would do my training
+80:45
+there so I would only pay for the number
+80:46
+of hours that I use it's like 19 cents
+80:48
+an hour or something
+80:49
+in which case here I would configure it
+80:52
+to be using to be using the GPU and it's
+80:56
+orders of magnitude faster like
+80:59
+something that would have taken multiple
+81:01
+hours would take less than a minute on
+81:03
+the NVIDIA GPU that were using and so
+81:08
+some of you may have configured Theano
+81:10
+some of you may have 10 servo configured
+81:12
+and so some of you most see tensorflow
+81:14
+as the backend
+81:15
+others would see Theano as the backend
+81:17
+but it shouldn't change anything
+81:22
+any other questions yeah ok ok
+81:28
+exercise 2 everyone give it a try let me
+81:31
+know if you're stuck there having any
+81:33
+trouble off you go
+81:35
+you have been some
+81:50
+you
+82:10
+okay okay is anyone still working on
+82:14
+exercise to Diane and Hasan you guys are
+82:16
+working on exercise to anyone still
+82:18
+working on exercise - okay and so we're
+82:22
+gonna officially wrap the workshop now
+82:25
+and then we can work together to make
+82:27
+the exercises work for everyone just a
+82:31
+small little comment I want to talk
+82:32
+about what was covered in the workshop
+82:35
+and what we didn't cover
+82:36
+I'm just for you to get a sense of the
+82:38
+scope of the things we talked about so
+82:41
+there are different types of machine
+82:43
+learning problems the type of machine
+82:45
+problem and the national earning problem
+82:47
+that we were looking at is called a
+82:49
+classification problem and
+82:50
+classification you're giving an input
+82:52
+and then you have a certain defined set
+82:56
+of categories and you want a map that
+82:58
+input to a category so in the case of
+83:00
+the digits you had 10 digits you take an
+83:02
+image and then you map it to one of
+83:04
+these ten digits in the case of the
+83:06
+characters you had in the case of every
+83:08
+28 characters and you take an image and
+83:10
+you map into one of these linear
+83:12
+characters so this is called a
+83:14
+classification problem so we looked at
+83:17
+specifically image classification an
+83:20
+image is slightly special because in
+83:23
+images realize there are all the same
+83:25
+size all the images that we had on the
+83:27
+data set there were 28 by 28 or 32 by 32
+83:30
+now there are certain types of
+83:33
+classifications where the input is not
+83:35
+the same size so you can't just have the
+83:38
+first layer process the whole input the
+83:40
+endpoint can be variable for example in
+83:42
+the case of text or in the case of
+83:45
+speech this is a variable input so that
+83:48
+is something that we didn't talk about
+83:50
+and there are techniques to incorporate
+83:52
+that into neural networks other types of
+83:56
+machine learning problems is for example
+83:58
+what is called a regression so instead
+84:00
+of defining taking an input and giving
+84:03
+out a specific category you take an
+84:05
+input and you give out a number so for
+84:08
+example I want to build a brain that
+84:11
+would compute that would predict the
+84:14
+price of rent and build based on the
+84:17
+current
+84:18
+so this is known as a regression problem
+84:20
+there is no categories they classify to
+84:23
+the output here is a number
+84:24
+there's also another class of problems
+84:26
+that is known as reinforcement so in
+84:29
+this case you're actually learning as
+84:30
+you're going like playing chess or
+84:33
+playing checkers those types of games so
+84:36
+we've scratched the surface of what
+84:39
+machine learning is because we had so
+84:42
+little time
+84:42
+also we specifically talked about neural
+84:45
+networks it is my belief that neural
+84:48
+mech networks is probably the most
+84:49
+powerful machine learning model or type
+84:52
+of brain out there having said that it's
+84:54
+not the only one there are many models
+84:56
+like support vector machines like naive
+84:59
+Bayes plenty of different models that
+85:01
+you can use but I think I tried I
+85:04
+decided to focus on neural networks
+85:05
+because I felt would be the most
+85:07
+valuable to understand and I think the
+85:09
+theory behind it and how it ties to
+85:11
+biology is something that's very
+85:12
+interesting as well so this is what we
+85:15
+covered for the workshop I'm hoping it
+85:18
+was helpful I'm hoping it inspired you
+85:20
+to dig deeper into this field if you
+85:23
+have any feedback for me about the
+85:26
+workshop I also love to stay in touch
+85:28
+I'll be sending out my contact
+85:30
+information would love to stay in touch
+85:32
+and if you run into any issues if you
+85:34
+want to continue working on the
+85:35
+exercises on your own or whatever
+85:38
+problems that you run into in the future
+85:40
+or if you just want to say hi please do
+85:42
+what must I keep that in touch and that
+85:46
+is a wrap and for the people that are
+85:47
+still working on the exercise I'll come
+85:49
+and make sure that you get it working
+85:52
+[Applause]
+85:57
+[Music]
