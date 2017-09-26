@@ -17,9 +17,9 @@ when I came back, I had to grab coffee with him
 00:32
 and told him, what do you think if we do a machine learning workshop
 00:35
-cause there are a lot of programmers whom I talked to 
+cause there are a lot of programmers whom I talked to
 00:37
-here, have the willingness and the passion to 
+here, have the willingness and the passion to
 00:40
 learn this topic
 00:42
@@ -93,7 +93,7 @@ that you learn? yes okay so what about
 02:19
 growing your nails? or growing your hair?
 02:26
-y-yeah and so here here's there's a very
+why? yeah and so here here's there's a very
 02:29
 important distinction that I want to
 02:31
@@ -143,7 +143,7 @@ when you're introduced to reading you're
 03:28
 learning by example so you would see oh
 03:31
-this is an a this is a "B" this is a "C" you
+this is an "A" this is a "B" this is a "C" you
 03:34
 would see thousands and thousands and
 03:36
@@ -157,15 +157,15 @@ different variations are "A" even though
 03:48
 we've never seen those before like I can
 03:50
-tell that this is an a the crocodile
+tell that this is an "A" the crocodile
 03:53
 with a bird inside I can tell that this
 03:56
-is an A I may have never seen this font
+is an "A" I may have never seen this font
 03:58
-before that this is an a that the a with
+before that this is an "A" that the "A" with
 04:00
-the two eyeballs on top is an A I'm able
+the two eyeballs on top is an "A" I'm able
 04:02
 to identify all of these things because
 04:04
@@ -173,7 +173,7 @@ your brain is very very powerful
 04:07
 at seeing the different patterns the
 04:10
-general pattern of Na and seeing it
+general pattern of an "A" and seeing it
 04:12
 everywhere else and so if I come back to
 04:15
@@ -243,7 +243,7 @@ okay any other definitions of the tree
 05:40
 branches and leaves or what is a branch
 05:46
-yeah sure what is a branch can you
+yeah sure but what is a branch can you
 05:49
 define a branch ok it's a brown pipe
 05:55
@@ -261,7 +261,7 @@ but some of them don't grow like this
 06:15
 some of them are more pointy and shorter
 06:18
-for example Hugh said okay maybe it's
+for example Hugh said okay maybe it's [NOTE: note sure if he said Hugh or he?]
 06:21
 a brown trunk what leaves this wouldn't
 06:25
@@ -319,13 +319,13 @@ a supercomputer and so if we dig inside
 07:28
 a little bit your brain is hackable for
 07:31
-example he look closely at this picture
+example if you look closely at this picture
 07:33
 your brain will get confused sometimes
 07:35
 because you'll see that this is a spiral
 07:37
-but this is actually for perfect circles
+but this is actually four perfect circles
 07:40
 so your brain is used to specific things
 07:43
@@ -393,9 +393,9 @@ that right a sponge has no brain what
 09:04
 about a jellyfish any guesses no it does
 09:08
-she does have a green it has a green a
+she does have a brain it has a brain a
 09:12
-couple of million actually thought less
+couple of million actually though less (NOTE: not sure if he said though or thought?)
 09:15
 than that it's 5600 neurons so it's a
 09:17
@@ -425,7 +425,7 @@ okay how many yes okay so a cat let's
 10:10
 see a cat has 760 million and around ten
 10:14
-trillion synapses gorillas any guesses
+trillion synapses gorilla any guesses
 10:19
 one billion it's more it's way more it's
 10:23
@@ -435,7 +435,7 @@ actually close okay and then humans less
 10:33
 than less than yes let's not get into
 10:39
-them okay no it's less close so we're
+that okay no it's less close so we're
 10:45
 actually at around 86 billion neurons
 10:46
@@ -541,13 +541,13 @@ and thousands of examples of characters
 12:57
 and then from that you infer the general
 12:59
-structure of what an a looks like what a
+structure of what an "A" looks like what a
 13:01
-B looks like and so forth so if you want
+"B" looks like and so forth so if you want
 13:04
-to do this what a machine is it okay if
+to do this with a machine is it okay if
 13:06
-I I am recording this screen I got you
+I I am recording the screen I got you
 13:09
 and so if we want to do this with humans
 13:12
@@ -557,9 +557,9 @@ little bit okay so if we want to do the
 13:18
 same thing with humans the first thing
 13:21
-we have to do is to get a data set a
+we have to do is to get a dataset a
 13:23
-data set is gonna be a data file work
+dataset is gonna be a data file work
 13:26
 contains all the different examples of
 13:28
@@ -577,7 +577,7 @@ picture of a number and it's gonna tell
 13:41
 you what this number is so the first
 13:45
-thing is we would get the data set now I
+thing is we would get the dataset now I
 13:47
 already have it downloaded I'll get into
 13:49
@@ -597,27 +597,27 @@ digits and it's loading an asterisk here
 14:10
 means that it's running okay
 14:12
-it has finished running and if I look at
+so it has finished running and if I look at
 14:14
 this this is 60,000 images and the image
 14:19
 sizes are 28 by 28 so let's take a look
 14:22
-at what's inside this data set so here
+at what's inside this dataset so here
 14:27
 is an example of some of the images that
 14:29
-we have so this is a data set of Arabic
+we have so this is a dataset of Arabic
 14:31
 digits and each one has a label so this
 14:36
 image image of the number 3 has the
 14:38
-label 3 this has a 4 5 s and so forth
+label 3 this has a 4, 5 s and so forth
 14:41
 and notice how deceivingly complicated
 14:44
-this problems or deceivingly simple it's
+this problem is or deceivingly simple it's
 14:46
 actually quite a complicated problem
 14:47
@@ -633,7 +633,7 @@ written very differently and as an image
 14:58
 it looks very different okay so we took
 15:01
-a look at this data set and now the next
+a look at this dataset and now the next
 15:04
 thing we're gonna do is this is what the
 15:08
@@ -673,7 +673,7 @@ labels with that image and so what is
 15:56
 actually happening happening now this is
 15:57
-the brain as its learning and the
+the brain as it is learning in the
 16:00
 background the two things that I want
 16:01
@@ -697,7 +697,7 @@ by you'll notice that this accuracy is
 16:29
 getting better and better and better
 16:31
-over time so how does this work in sight
+over time so how does this work inside
 16:35
 this is what we're going to be
 16:37
@@ -719,7 +719,7 @@ the brain has never seen before so I
 17:01
 just loaded it and let's look at one of
 17:03
-these images so here I just Lommel it
+these images so here I just Lommel it (NOTE: if he pronounced a word wrong "Lommel", should I keep it?)
 17:07
 loaded test image number 18 and so this
 17:10
@@ -733,7 +733,7 @@ predict and I give it the image and then
 17:24
 look at the prediction and in this case
 17:27
-it tells me that it is innate so I was
+it tells me that it is an "eight" so I was
 17:29
 able to identify that this is an image
 17:31
@@ -761,13 +761,13 @@ of the things that got wrong and you'll
 18:06
 notice that some of these things are
 18:08
-genuinely hard for example this this I
+genuinely hard for example this this I (NOTE: I guess he said "I" here?)
 18:13
 was actually a zero I thought it was a
 18:15
 five it actually looks like a five but
 18:18
-who never wrote it meant to write a zero
+whomever wrote it meant to write a zero
 18:20
 let's see
 18:22
@@ -779,13 +779,13 @@ it was more like a big dot this was
 18:30
 actually a three but for whatever reason
 18:32
-addicted a zero I guess because it was
+predicted it a zero I guess because it was
 18:33
 very very clustered this one it
 18:36
 predicted it to be a zero because when
 18:38
-it cooked when you look at it closely
+it when you look at it closely
 18:40
 it's more like a dot like the Arabic
 18:42
@@ -799,11 +799,11 @@ like it's genuinely hard like I have no
 18:51
 idea what this is but it says it's an
 18:54
-eight hole never wrote it it actually it
+eight whomever wrote it it actually it
 18:56
-is an eight now that no that you would
+is an eight now that now that you
 18:57
-tell me what it is so this was a sanity
+tell me what it is so this was a sanity (NOTE: did he say "tell me"?)
 19:02
 check to see that the brain is actually
 19:03
@@ -825,7 +825,7 @@ digits we're gonna do two things one is
 19:22
 we're going to set up the environment
 19:23
-yesterday and we'll make it work and
+yes and we'll make it work and (NOTE: did he say "yes" at the beginning?)
 19:25
 actually run this code and this next
 19:28
@@ -849,7 +849,7 @@ wrote it with the intention of it being
 20:01
 a zero
 20:04
-[Music]
+[Music] (NOTE: this is not MUSIC!!! probably someone 3m yzayzi2 bil kirse :P)
 20:14
 yeah so so in this particular case I
 20:18
@@ -1041,7 +1041,7 @@ machine usually isn't wandering around
 25:15
 the world looking at it you give it a
 25:17
-data set so they load a data set and
+dataset so they load a dataset and
 25:19
 then we build a brain because the
 25:21
@@ -1095,21 +1095,21 @@ remember what we mentioned before the
 26:27
 first thing that we would do is we would
 26:28
-get a data set so that the machine would
+get a dataset so that the machine would
 26:31
 know what it is that we want to teach so
 26:33
-there was a data set that we gave the
+there was a dataset that we gave the
 26:35
 link to which hopefully you've all
 26:36
 downloaded and then what I'm gonna do is
 26:40
-I'm going to take this data set and then
+I'm going to take this dataset and then
 26:45
 you see in the repository there's a
 26:47
-folder here called data sets and then
+folder here called datasets and then
 26:50
 there's another folder called Arabic
 26:52
@@ -1213,7 +1213,7 @@ the corresponding label should just be
 29:40
 the number 9 okay now once you know the
 29:44
-data set if its pictures that's always a
+dataset if its pictures that's always a
 29:46
 good idea to visualize things throughout
 29:48
@@ -1255,7 +1255,7 @@ free when you're going through the code
 30:29
 to check that out okay so now we've
 30:32
-loaded the data set and now because a
+loaded the dataset and now because a
 30:35
 machine doesn't have a brain we're going
 30:37
@@ -1305,7 +1305,7 @@ that actually matters more is the
 31:46
 validation accuracy so this is the 20%
 31:50
-of the data set that the brain didn't
+of the dataset that the brain didn't
 31:52
 look at and so here it varies between
 31:55
@@ -1357,9 +1357,9 @@ is instead of just predicting that one
 33:01
 image I'm gonna predict all the images
 33:04
-that are in that data set and to figure
+that are in that dataset and to figure
 33:07
-out how many images are in that data set
+out how many images are in that dataset
 33:09
 that I can just do images test dot what
 33:15
@@ -1501,9 +1501,9 @@ let me just figure out this if I go to
 36:41
 exercise one you'll find this any
 36:44
-repository as well so this data set
+repository as well so this dataset
 36:51
-so this data set is hosted on a website
+so this dataset is hosted on a website
 36:55
 called Kegel and this is actually a
 37:00
@@ -1541,7 +1541,7 @@ competition's that they have for
 37:36
 starters is the digit recognizer image
 37:39
-so this is a data set with the English
+so this is a dataset with the English
 37:41
 digits so we're gonna download that data
 37:43
@@ -1549,11 +1549,11 @@ set and then we're gonna do a very
 37:47
 similar thing to what we did before
 37:50
-we're gonna load the data set and what
+we're gonna load the dataset and what
 37:55
 was the one tip I mentioned about
 37:56
-working with data sets something that a
+working with datasets something that a
 38:00
 lot of people don't do when working with
 38:02
@@ -1567,7 +1567,7 @@ example and here I'm gonna pass it the
 38:16
 images as well as the labels okay so it
 38:25
-looks very similar to the other data set
+looks very similar to the other dataset
 38:28
 that we have except it's in English okay
 38:32
@@ -2831,7 +2831,7 @@ are the different optimizers that you
 69:40
 can use you can try all these different
 69:42
-configurations on various data sets that
+configurations on various datasets that
 69:44
 are out there on Kaggle or otherwise and
 69:46
@@ -2849,7 +2849,7 @@ copy this
 70:12
 and I'm going to go here yeah restart ok
 70:19
-so this was the English data set that we
+so this was the English dataset that we
 70:23
 had before this is double check this is
 70:27
@@ -2905,23 +2905,23 @@ before okay so now we're gonna move on
 71:57
 to exercise 2 and in this exercise there
 72:06
-is another data set on Kaggle if the
+is another dataset on Kaggle if the
 72:11
 Internet is cooperating
 72:19
-this is a data set of Arabic characters
+this is a dataset of Arabic characters
 72:23
 so what you're gonna do is you're gonna
 72:26
 go to that link you should have all
 72:28
-downloaded this data set did anyone not
+downloaded this dataset did anyone not
 72:30
 get it we have it local here if
 72:31
 people need it okay cool so we're gonna
 72:34
-get this data set and then again you're
+get this dataset and then again you're
 72:37
 gonna go into your datasets folder
 72:39
@@ -2973,13 +2973,13 @@ and try to write the Keras model that
 73:51
 would make this learn now if you look at
 73:55
-the size of this data set remember that
+the size of this dataset remember that
 74:01
 shape yes
 74:04
 so here we have 13440 and it's a 32
 74:10
-by 32 image so the data set here is
+by 32 image so the dataset here is
 74:13
 actually a lot smaller than what we've
 74:16
@@ -3299,7 +3299,7 @@ images realize they are all the same
 83:25
 size all the images that we had on the
 83:27
-data set there were 28 by 28 or 32 by 32
+dataset there were 28 by 28 or 32 by 32
 83:30
 now there are certain types of
 83:33
