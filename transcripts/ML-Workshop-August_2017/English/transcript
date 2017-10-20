@@ -1835,7 +1835,7 @@ and I'm gonna give the variable a 1 if
 45:27
 the answer to that question is a yes I'm
 45:30
-gonna give it a 0 if the answer is a No
+gonna give it a 0 if the answer is a no
 45:33
 so for example let's say I think
 45:37
@@ -1845,7 +1845,7 @@ there are jobs but the school isn't
 45:42
 close to home what would be the values I
 45:47
-didn't hear that one 1 0 that's right
+didn't hear that 1 1 0 that's right
 45:53
 let's try another example there are
 45:57
@@ -1865,7 +1865,7 @@ variables the next thing we're gonna do
 46:14
 is so these are the factors we're
 46:17
-feeding and turning on and the neuron is
+feeding into our neuron and the neuron is
 46:19
 gonna take these three things and make a
 46:21
@@ -1889,9 +1889,9 @@ it's less than or equal to that
 46:45
 threshold we'll say no it makes sense so
 46:49
-far
+far?
 46:49
-any questions Oh so threshold here is a
+any questions? Cool so threshold here is a
 46:53
 bit bulky so I'm just gonna rephrase
 46:56
@@ -1901,21 +1901,21 @@ look at the examples that we've had
 47:02
 before let's see it I set the threshold
 47:05
-to be 1 okay I think you're cuter size
+to be 1 okay I think computer science
 47:10
 is interesting there are jobs but the
 47:13
 school isn't close to home we've already
 47:15
-mentioned how this is encoded x 1 is 1 x
+mentioned how this is encoded x1 is 1 x2
 47:17
-2 is 1 x 3 is 0 now based on this
+is 1 x3 is 0 now based on this
 47:20
 decision function what should be my
 47:22
 decision
 47:24
-why else exactly so i some yes i sum
+why you get s exactly so i some yes i sum
 47:29
 them all up exactly
 47:31
@@ -1945,7 +1945,7 @@ able to capture simple decision models
 48:05
 ok let's look at a more abstract example
 48:08
-so let's say I want to implement and
+so let's say I want to implement an
 48:10
 or gate so in this case I have two
 48:13
@@ -1961,7 +1961,7 @@ find out a value of theta that would
 48:30
 make this true and so let's say I should
 48:33
-say that to be 0.5 does this work well
+theta to be 0.5 does this work well
 48:37
 let's see so at 0 and 0
 48:41
@@ -1989,7 +1989,7 @@ are the four points that we've had here
 49:16
 the white ones are where I want the
 49:19
-decision to be won the black dot is
+decision to be 1 the black dot is
 49:22
 where I want it to be 0 and when I put
 49:25
@@ -2001,11 +2001,11 @@ from the black circles this is the line
 49:35
 where things equal theta so here it's at
 49:38
-0.5 and here's that point 5 any
+0.5 and here's that's .5 any
 49:41
 questions so far
 49:42
-make sense ok let's try a NAND gate we
+make sense ok let's try an AND gate we
 49:48
 also need to figure out a theta to make
 49:50
@@ -2019,13 +2019,13 @@ so yes exactly exactly
 50:05
 and so if we choose theta to be equals
 50:07
-one point five looks like it
+1.5 let's look at the
 50:09
 examples 0 0 less than 1.5 so that's the
 50:14
 decision is 0 at 0 1 it's less than 1.5
 50:18
-so I just a 0 X 1 and X 2 it's also less
+so our decision is 0 X1 and X2 it's also less
 50:22
 than 1.5 1 and 1 it's 2 which is greater
 50:26
@@ -2037,13 +2037,13 @@ could have worked 1.2 or even yeah
 50:37
 exactly exactly exactly and again
 50:40
-visualizing it in the case of the end we
+visualizing it in the case of the AND we
 50:43
 only want this value to be decision 1
 50:45
 and so we've moved the line from where
 50:48
-it was for the or to here separating the
+it was for the OR to here separating the
 50:53
 white circles on one side the black
 50:54
@@ -2051,11 +2051,11 @@ circles on the other okay let's try
 50:57
 another example and in this case I want
 50:59
-to implement an XOR so an X for in case
+to implement an XOR so an XOR in case
 51:02
 you don't remember you only want the
 51:04
-decision to be 1 1 only one of the
+decision to be 1 when only one of the
 51:07
 values is 1 different digits
 51:11
@@ -2065,15 +2065,15 @@ learning different digits oh yes
 51:26
 yes exactly like this this is correct
 51:30
-right so what would motivate abhi that
+right so what would a theta be that
 51:35
 would work for this
 51:40
 well so that actually won't work
 51:43
-that won't work between two values seven
+that won't work between two value is that right?
 51:51
-yeah I think I figure I should I pretty
+yeah I think I think you're actually pretty
 51:53
 close so if you look at if you look at
 51:56
@@ -2083,21 +2083,21 @@ different there's something different
 52:00
 about this then say the end notice that
 52:04
-in the case of the end I was able to
+in the case of the AND I was able to
 52:07
 draw a line that separates the white
 52:10
-we're decision has one on one side and
+where the decision is one on one side and
 52:12
 the decision is zero on the other side
 52:15
-and the or was the same thing
+and the OR was the same thing
 52:17
 you can't yes exactly but you can't have
 52:22
-a curve in upper in a neuron so and
+a curve in upper in a neuron so a
 52:26
-you're on a single neuron can't capture
+neuron, a single neuron can't capture
 52:28
 this I can't do an XOR with a neuron
 52:31
@@ -2115,15 +2115,15 @@ of that is black and so how are we gonna
 52:49
 implement this remember this line this
 52:52
-was the same or line that we had before
+was the same OR line that we had before
 52:54
-and so yeah so there's an or we know
+and so yeah so there's an OR we know
 53:00
-there's an or yeah yes there corresponds
+there's an OR yeah yes there corresponds
 53:04
-to an or and this was an end the end
+to an OR and this was an AND the AND
 53:06
-line that we had but the end line is
+line that we had but the AND line is
 53:08
 different because the end made all the
 53:11
@@ -2133,7 +2133,7 @@ one black we want the reverse of that
 53:16
 and so to do that we'll put everything
 53:19
-will be will be in not end basically
+will be will be in NOT AND basically
 53:22
 you'll reverse everything and then you
 53:24
@@ -2141,27 +2141,27 @@ want things to be the ones that are to
 53:28
 the right of this one and the ones to
 53:30
-the left of this one and so the end
+the left of this one and so you AND
 53:32
 these two
 53:33
 results and you'll get your decision and
 53:36
-so if I expand this we've built on or
+so if I expand this we've built on OR
 53:38
-we've built an end so the full neural
+we've built an AND so the full neural
 53:42
-network gives the member oh I feel 0.5
+network gives the member the one with theta 0.5
 53:44
-the end theta 1 point 5 for the knot and
+the AND theta 1.5 for the NOT AND
 53:47
 I actually took the negative of the
 53:50
 inputs and I put in the negative of the
 53:53
-theta this is how you can do a knot in a
+theta this is how you can do a NOT in a
 53:55
-neuron and the UCSC in this case I took
+neuron and as you can see in this case I took
 53:59
 a very simple neuron that's capable of
 54:03
@@ -2185,9 +2185,9 @@ like recognizing digits like singing
 54:27
 like dancing like driving a car and so
 54:29
-forth okay so a couple of things I don't
+forth okay so a couple of things I wanted
 54:32
-have to cover if I go back to the
+to cover if I go back to the
 54:35
 original example some of these things in
 54:41
@@ -2199,7 +2199,7 @@ others for example maybe I think the
 54:50
 fact that if the subject is interesting
 54:52
-me and matters a lot more that there is
+me matters a lot more that there is
 54:54
 a school close to home and so to
 54:57
@@ -2213,13 +2213,13 @@ here will be weighted and so instead of
 55:08
 the decision function just being these
 55:10
-sons of the X's it becomes the access
+sums of the X's it becomes the X's
 55:15
-times the W's so be doing x1 times the
+times the W's so be doing x1 times w1
 55:17
-we 1 x2 times that we to have students
+x2 times w2 x3 times
 55:20
-away 3 that's something those all up and
+w3 and summing those all up and
 55:22
 checking if it's greater than or equal
 55:24
@@ -2245,7 +2245,7 @@ doesn't matter what w2 is as long as
 55:54
 it's positive ok for the same example
 55:59
-what if I say be interested in the
+what if I say being interested in the
 56:02
 subject is very important to me and I
 56:04
@@ -2271,7 +2271,7 @@ greater number than this one it doesn't
 56:42
 matter what the values are so 2 1
 56:44
-negative 120 10-15 as long as just that
+-1 20 10 -15 as long as just that
 56:48
 as long as you're having the right
 56:50
@@ -2321,11 +2321,11 @@ about this one how many parameters do we
 57:54
 have this was the neural network or the
 57:57
-coup and the group of neurons by the way
+group and the group of neurons by the way
 57:58
-is known as a neural network for it was
+is known as a neural network 4? it is
 58:03
-more there's an item so every connection
+more there's 9 so every connection
 58:06
 here has a weight one two three four
 58:09
@@ -2363,7 +2363,7 @@ the predicted value and I take the
 58:57
 square of the difference but you can
 59:00
-have different values that you can have
+have different values and you can have
 59:01
 different error functions as well
 59:04
@@ -2395,11 +2395,11 @@ this session I would rather you to focus
 59:35
 on the high level code of how to use
 59:37
-these different building blocks to those
+these different building blocks to build
 59:39
 neural networks to learn things but
 59:41
-there are plenty resources to look into
+there are plenty of resources to look into
 59:44
 maybe this is something
 59:45
@@ -2407,9 +2407,9 @@ do in the future if people are
 59:46
 interested okay so another thing is we
 59:51
-said that a position function is the
+said that a decision function is the
 59:54
-summing the axis times weights and it
+summing the X's times weights and it
 60:00
 has the value of one when it's greater
 60:01
@@ -2437,13 +2437,13 @@ different decision functions depending
 60:24
 on how you want your neuron to behave so
 60:27
-for example there these are some
+for example these are some
 60:29
 functions that you will see when you
 60:30
 look at code bases of machine learning
 60:33
-so sigmoid values softmax this is what a
+so sigmoid relu softmax this is what a
 60:36
 sigmoid function looks like for example
 60:37
@@ -2483,9 +2483,9 @@ is saying that the label is seven so I'm
 61:29
 putting zero for everything and I'm
 61:31
-putting one for the value
+putting one for the value of seven
 61:33
-that I want and explain why we do this
+that I want and I'll explain why we do this
 61:34
 in a minute and then the first thing
 61:36
@@ -2499,7 +2499,7 @@ and then we're gonna build a layer of
 61:51
 neurons in this case I'm gonna add 512
 61:54
-and it runs and I'm getting connected
+and it runs and I'm gonna connect
 61:56
 each one of these pixels to all 512
 62:01
@@ -2517,11 +2517,11 @@ everything in this layer to this layer
 62:17
 the same way and then finally I'll be
 62:21
-doing what's called the atomic put so
+doing what's called the output so
 62:23
-here I have 10 neurons and being output
+here I have 10 neurons and the output
 62:25
-in each of these neurons they're all
+of each of these neurons they're all
 62:26
 connected to this layer the output of
 62:29
@@ -2531,7 +2531,7 @@ corresponding to that particular digit
 62:35
 being the correct digit so in the case
 62:38
-of 7 I expect the seventh note to have a
+of 7 I expect the seventh node to have a
 62:43
 significantly higher value than all the
 62:46
@@ -2565,9 +2565,9 @@ cost of slower training time but it's
 63:29
 largely an art and you try different
 63:32
-stuff I eventually see that patterns
+stuff and eventually see that patterns
 63:34
-emerge but putting that pattern and
+emerge but putting that pattern into a
 63:37
 science has yet to be done and it is
 63:40
@@ -2581,7 +2581,7 @@ designing good neural networks but it
 63:50
 wouldn't be it's not a science there is
 63:52
-no exact reason why this is 512 I'm not
+no exact reason why this is 512 and not
 63:56
 600 but today when you're building your
 64:00
@@ -2589,7 +2589,7 @@ own neural networks you should try try
 64:03
 adding more layers try changing the
 64:04
-number theorems try changing the
+number of neurons try changing the
 64:07
 decision functions that we use try
 64:09
@@ -2597,7 +2597,7 @@ changing the error and see how this
 64:11
 impacts your performance okay so we've
 64:14
-expressed the general structure of the
+described the general structure of the
 64:16
 neural network that we built let's look
 64:19
@@ -2617,7 +2617,7 @@ is there today for example there is a
 64:52
 very well known competition called image
 64:55
-net where they would have many May I
+net where they would have many many I
 64:58
 think on the order of millions of images
 65:00
@@ -2639,7 +2639,7 @@ bigger than 512 so it's massive and so
 65:24
 training a network of that size would
 65:25
-take days you probably want to run it on
+take days and you probably want to run it on
 65:28
 GPUs we're gonna be using the CPUs right
 65:31
@@ -2661,13 +2661,13 @@ are there questions okay so I'm gonna
 65:53
 jump into the code and the machine
 65:57
-learning Gregory we're gonna be using to
+learning library we're gonna be using to
 65:59
 do neural networks
 66:01
-it's called Kiera's so you're gonna
+it's called Keras so you're gonna
 66:03
-start by importing Charis and then first
+start by importing Keras and then first
 66:09
 you're gonna define remember what we
 66:10
@@ -2701,25 +2701,25 @@ the first step that we had we took the
 66:46
 image and we flattened it into one
 66:49
-factor so here and telling it the input
+factor so here I'm telling it the input
 66:51
 is 28 by 28 and I'm flattening it to be
 66:55
 one vector the next thing is we had a
 66:59
-layer of 512 mini runs and so I can do
+layer of 512 neurons and so I can do
 67:03
 that by saying dense dense is saying
 67:07
 connect all the 784 values that are here
 67:13
-to all these 512 neurons that are you
+to all these 512 neurons that are here
 67:17
 and the activation think about that's
 67:19
 the decision function that we were
 67:21
-talking about revenue is one of the
+talking about relu is one of the
 67:23
 decision functions you don't have to use
 67:25
@@ -2729,7 +2729,7 @@ about it is that it's it speeds up the
 67:33
 training so if you try other functions
 67:35
-that should still work but rarely you
+that should still work but relu
 67:37
 generally is a good practice for middle
 67:39
@@ -2755,7 +2755,7 @@ digits sorry yeah exactly
 68:05
 zero to nine sorry ten digits and so I
 68:07
-want ten neurons to be not output and
+want ten neurons to be my output and
 68:11
 here I'm choosing softmax as my decision
 68:15
@@ -2769,7 +2769,7 @@ be a probability so that's when you use
 68:25
 a soft max this makes sure that all the
 68:27
-some of these neurons sums up to one and
+sums of these neurons sums up to one and
 68:30
 so when you look at the output you can
 68:32
@@ -2783,7 +2783,7 @@ neural network that we have and then
 68:42
 finally this is now that we've outlined
 68:44
-the architecture you want to call it how
+the architecture you want to tell it how
 68:47
 do you measure error and what algorithm
 68:49
@@ -2791,13 +2791,13 @@ that you want to use to minimize the
 68:52
 error and that's what we're gonna do
 68:54
-point I use the mean squared error as we
+we're gonna use the mean squared error as we
 68:57
 talked about before and the algorithm or
 69:00
-the optimizer is a casting in gradient
+the optimizer is stochastic gradient
 69:03
-descent and you can optionally add
+descent and then you can optionally add
 69:07
 another so you just leave it at that
 69:10
@@ -2807,7 +2807,7 @@ going to show you the
 69:13
 error which sometimes it's not as easy
 69:15
-to understand if you add accuracy of to
+to understand if you add accuracy to
 69:19
 your metrics it'll show you the
 69:21
@@ -2817,7 +2817,7 @@ which ones they got wrong so this is an
 69:26
 extra to see and you can look up
 69:28
-appearance has a really good
+Keras has a really good
 69:29
 documentation so you can look into what
 69:32
@@ -2833,7 +2833,7 @@ can use you can try all these different
 69:42
 configurations on various data sets that
 69:44
-are out there on cattle or otherwise and
+are out there on Kaggle or otherwise and
 69:46
 explore how that actually changes things
 69:50
@@ -2855,7 +2855,7 @@ had before this is double check this is
 70:27
 the one
 70:42
-I didn't love the Deus
+I didn't load the dataset
 70:53
 okay and here I'm just gonna paste in
 70:56
@@ -2905,7 +2905,7 @@ before okay so now we're gonna move on
 71:57
 to exercise 2 and in this exercise there
 72:06
-is another data set on cat go if the
+is another data set on Kaggle if the
 72:11
 Internet is cooperating
 72:19
@@ -2915,17 +2915,17 @@ so what you're gonna do is you're gonna
 72:26
 go to that link you should have all
 72:28
-downloaded this data set that anyone not
+downloaded this data set did anyone not
 72:30
-get it we have that look over here if
+get it we have it local here if
 72:31
 people need it okay cool so we're gonna
 72:34
 get this data set and then again you're
 72:37
-gonna go into your data sets folder
+gonna go into your datasets folder
 72:39
-you're gonna go to Arabic characters and
+you're gonna go to arabic-characters and
 72:42
 you're gonna dump the files here and
 72:46
@@ -2945,7 +2945,7 @@ image it's corresponding to the index of
 73:11
 that letter in the Arabic alphabet so
 73:13
-Aleph is a one but it's a two to the
+Aleph (أ) is a one Baa (ب) is a two Ta (ت) is a
 73:16
 three until you get to yeah
 73:17
@@ -2955,7 +2955,7 @@ not use the brain make I want to build a
 73:28
 model or a brain that would learn these
 73:32
-digits using Kerris if you actually try
+digits using Keras if you actually try
 73:35
 to use the brain it's not gonna work
 73:36
@@ -2965,11 +2965,11 @@ to look into the code of the brain and
 73:42
 I'll also show the sample of code that I
 73:44
-that I just shared it I'll keep it on
+that I just shared I'll keep it on
 73:46
 the screen look through that notebook
 73:48
-and try to write the Kiera's model that
+and try to write the Keras model that
 73:51
 would make this learn now if you look at
 73:55
@@ -2977,7 +2977,7 @@ the size of this data set remember that
 74:01
 shape yes
 74:04
-so here we have 13,000 440 and it's a 32
+so here we have 13440 and it's a 32
 74:10
 by 32 image so the data set here is
 74:13
@@ -3013,25 +3013,23 @@ let's say here here I made a prediction
 75:13
 of this image and what I'm gonna do
 75:18
-instead is I'm gonna use Karis directly
+instead is I'm gonna use Keras directly
 75:20
-here predict I think this works see I'll
+here predict I think this works let's see I'll
 75:31
-need to check this in tax PC
-75:39
-[Music]
+need to check the syntax
 75:41
-all three dimensions
+oh three dimensions
 75:51
-oh listen one second I'll get this
+oh let's see one second I'll get this
 76:07
-go need to look at the comment to get to
+OK, I'll need to look at the command to get to
 76:09
-you but the output if you use the model
-76:12
-dot predict that I was trying to use
+you but the output if you use the model.predict
+76:13
+that I was trying to use
 76:14
-here I don't figure out the syntax
+here and I'll figure out the syntax
 76:15
 shortly it actually outputs the
 76:18
@@ -3061,15 +3059,15 @@ here tonight that's right that's right
 77:11
 that's a very good question so
 77:13
-Carris is actually a wrapper on top so
+Keras is actually a wrapper on top so
 77:17
 typically these days actually let me
 77:20
 back up right now and the question was
 77:24
-what is the difference between carrots
+what is the difference between Keras
 77:27
-and tensorflow
+and TensorFlow
 77:28
 so in the early days of neural networks
 77:31
@@ -3089,15 +3087,15 @@ there's a lot of scalar multiplication
 77:50
 that's going on there so there's a lot
 77:52
-of nature C's involved and GPUs thanks
+of matrices involved and GPUs thanks
 77:55
 to the gaming industry are remarkably
 77:57
-good at that so we started moving some
+good at that so we started moving from
 77:59
 training on the CPU the training on the
 78:01
-GPU tensorflow came about to help out
+GPU TensorFlow came about to help out
 78:04
 with the problem of I have many many
 78:07
@@ -3105,9 +3103,9 @@ GPUs in a training a large network and I
 78:09
 want to distribute the computation
 78:12
-across multiple GPUs Harris is actually
+across multiple GPUs Keras is actually
 78:16
-a layer on top of tensorflow
+a layer on top of TensorFlow
 78:18
 so it actually let me just get a notepad
 78:22
@@ -3115,17 +3113,17 @@ so the the flow that you have if you're
 78:26
 using the GPU is you have right now
 78:32
-Kharis that's like think of that as like
+Keras that's like think of that as like
 78:34
 the top layer and afterwards that can be
 78:41
-using that Kiera's as a wrapper to
+using that Keras is a wrapper to
 78:43
 several libraries so you can use
 78:46
-tensorflow or you can use another
+TensorFlow or you can use another
 78:52
-equivalent library called fionna and in
+equivalent library called Theano and in
 78:57
 turn these libraries what they do is
 79:00
@@ -3133,7 +3131,7 @@ they take the commands that you give
 79:04
 them
 79:05
-they compiled them into a language
+and then they compiled them into a language
 79:08
 called CUDA and CUDA is the language
 79:11
@@ -3141,37 +3139,37 @@ that's used for NVIDIA chips that are
 79:14
 currently used for training large neural
 79:17
-networks so Cara's has a higher level
+networks so Keras is a higher level
 79:19
-API that tensorflow it's a simpler API
+API that TensorFlow it's a simpler API
 79:22
 to use but in the backend you could be
 79:25
-using tensorflow
+using TensorFlow
 79:26
 if you look at the notebook here it says
 79:29
-using fionna back-end if I can change
+using Theano backend if I can change
 79:32
-that so I can open up the Karis config
+that so I can open up the Keras config
 79:41
-so here I'm choosing to Fiona as my
+so here I'm choosing to Theano as my
 79:44
-back-end I can change that and put in
+backend I can change that and put in
 79:47
-tensorflow
+TensorFlow
 79:50
-and assuming that tensorflow is
+and assuming that TensorFlow is
 79:54
-installed if I reinforce this I'll show
+installed if I reimport this I'll show
 79:57
 you just a restart
 80:05
-now it's using tensorflow so I have
+now it's using TensorFlow so I have
 80:08
-reconfigured Kerris to use tensor flow
+reconfigured Keras to use TensorFlow
 80:11
-in this case as opposed to Fiona and
+in this case as opposed to Theano and
 80:15
 another thing that you can actually
 80:16
@@ -3181,7 +3179,7 @@ in this configuration file you can
 80:23
 change it from training on the CPU or at
 80:25
-the GPU versus the CPU here and I do not
+the GPU versus the CPU here I do not
 80:28
 have a CUDA GPU so this is not going to
 80:31
@@ -3211,13 +3209,13 @@ something that would have taken multiple
 81:01
 hours would take less than a minute on
 81:03
-the NVIDIA GPU that were using and so
+the NVIDIA GPU that we're using and so
 81:08
 some of you may have configured Theano
 81:10
-some of you may have 10 servo configured
+some of you may have TensorFlow configured
 81:12
-and so some of you most see tensorflow
+and so some of you will see TensorFlow
 81:14
 as the backend
 81:15
@@ -3234,16 +3232,14 @@ know if you're stuck there having any
 trouble off you go
 81:35
 you have been some
-81:50
-you
 82:10
 okay okay is anyone still working on
 82:14
-exercise to Diane and Hasan you guys are
+exercise 2 Rayan and Hasan you guys are
 82:16
-working on exercise to anyone still
+working on exercise 2 anyone still
 82:18
-working on exercise - okay and so we're
+working on exercise 2 okay and so we're
 82:22
 gonna officially wrap the workshop now
 82:25
@@ -3257,7 +3253,7 @@ about what was covered in the workshop
 82:35
 and what we didn't cover
 82:36
-I'm just for you to get a sense of the
+and just for you to get a sense of the
 82:38
 scope of the things we talked about so
 82:41
@@ -3265,7 +3261,7 @@ there are different types of machine
 82:43
 learning problems the type of machine
 82:45
-problem and the national earning problem
+problem and the machine learning problem
 82:47
 that we were looking at is called a
 82:49
@@ -3285,11 +3281,11 @@ image and then you map it to one of
 83:04
 these ten digits in the case of the
 83:06
-characters you had in the case of every
+characters you had in the case of Arabic
 83:08
 28 characters and you take an image and
 83:10
-you map into one of these linear
+you map into one of these 28
 83:12
 characters so this is called a
 83:14
@@ -3299,7 +3295,7 @@ specifically image classification an
 83:20
 image is slightly special because in
 83:23
-images realize there are all the same
+images realize they are all the same
 83:25
 size all the images that we had on the
 83:27
@@ -3313,7 +3309,7 @@ the same size so you can't just have the
 83:38
 first layer process the whole input the
 83:40
-endpoint can be variable for example in
+input can be variable for example in
 83:42
 the case of text or in the case of
 83:45
@@ -3339,9 +3335,9 @@ example I want to build a brain that
 84:11
 would compute that would predict the
 84:14
-price of rent and build based on the
+price of rent in Beirut based on the
 84:17
-current
+current prices
 84:18
 so this is known as a regression problem
 84:20
@@ -3369,7 +3365,7 @@ also we specifically talked about neural
 84:45
 networks it is my belief that neural
 84:48
-mech networks is probably the most
+networks is probably the most
 84:49
 powerful machine learning model or type
 84:52
@@ -3385,7 +3381,7 @@ you can use but I think I tried I
 85:04
 decided to focus on neural networks
 85:05
-because I felt would be the most
+because I felt that would be the most
 85:07
 valuable to understand and I think the
 85:09
@@ -3419,14 +3415,12 @@ problems that you run into in the future
 85:40
 or if you just want to say hi please do
 85:42
-what must I keep that in touch and that
+would love to keep that in touch and that
 85:46
 is a wrap and for the people that are
 85:47
 still working on the exercise I'll come
 85:49
-and make sure that you get it working
+and make sure they get it working
 85:52
 [Applause]
-85:57
-[Music]
